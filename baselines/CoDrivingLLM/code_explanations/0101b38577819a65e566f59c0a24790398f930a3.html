@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>CoDrivingLLM &#x539f;&#x59cb;&#x5c08;&#x6848; &DiacriticalGrave;Run&lowbar;multi&lowbar;CAV&lowbar;LLM&period;py&DiacriticalGrave; &#x9010;&#x884c;&#x8a73;&#x7d30;&#x4ee3;&#x78bc;&#x89e3;&#x6790;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<h1 id="codrivingllm-原始專案-run_multi_cav_llmpy-逐行詳細代碼解析">CoDrivingLLM 原始專案 <code>Run_multi_CAV_LLM.py</code> 逐行詳細代碼解析</h1>
+<p>本文件針對 <code>CoDrivingLLM</code> 專案的入口主程式 <code>Run_multi_CAV_LLM.py</code> 進行逐行、逐段的功能解析，幫助您深入理解其運行時的資料流與仿真邏輯。</p>
+<hr>
+<h2 id="1-模組導入與環境初始化-lines-1---10">1. 模組導入與環境初始化 (Lines 1 - 10)</h2>
+<pre><code class="language-python"><span class="hljs-number">1</span>: <span class="hljs-keyword">from</span> llm_controller.llm_agent_action <span class="hljs-keyword">import</span> *
+<span class="hljs-number">2</span>: <span class="hljs-keyword">from</span> llm_controller.llm_agent_negotiation_system <span class="hljs-keyword">import</span> *  <span class="hljs-comment"># system perspective negotiation</span>
+<span class="hljs-number">3</span>: <span class="hljs-keyword">from</span> llm_controller.memory <span class="hljs-keyword">import</span> DrivingMemory
+<span class="hljs-number">4</span>: <span class="hljs-keyword">import</span> highway_env
+<span class="hljs-number">5</span>: <span class="hljs-keyword">import</span> imageio
+<span class="hljs-number">6</span>: <span class="hljs-keyword">import</span> openpyxl
+<span class="hljs-number">7</span>: <span class="hljs-keyword">import</span> os
+<span class="hljs-number">8</span>: <span class="hljs-keyword">import</span> shutil
+<span class="hljs-number">9</span>: 
+<span class="hljs-number">10</span>: os.environ[<span class="hljs-string">&quot;KMP_DUPLICATE_LIB_OK&quot;</span>] = <span class="hljs-string">&quot;TRUE&quot;</span>
+</code></pre>
+<ul>
+<li><strong>第 1-3 行</strong>：從子資料夾 <code>llm_controller</code> 中導入自駕車控制模組（<code>llm_agent_action</code>）、路側 RSU 衝突談判模組（<code>llm_agent_negotiation_system</code>）以及 Chroma 記憶體資料庫接口（<code>memory</code>）。</li>
+<li><strong>第 4-8 行</strong>：導入仿真環境 <code>highway_env</code>、影片寫入庫 <code>imageio</code>、Excel 處理庫 <code>openpyxl</code>、系統操作庫 <code>os</code> 與檔案複製工具 <code>shutil</code>。</li>
+<li><strong>第 10 行</strong>：設定環境變數 <code>KMP_DUPLICATE_LIB_OK = &quot;TRUE&quot;</code>。這是為了防止 PyTorch/SentenceTransformers 在本地多核心 CPU 上運行 OpenMP 庫時，因為多個副本衝突而導致 Python 直譯器直接閃退（Crash）。</li>
+</ul>
+<hr>
+<h2 id="2-excel-初始化助手open_excel-lines-12---24">2. Excel 初始化助手：<code>open_excel</code> (Lines 12 - 24)</h2>
+<p>此函式負責在指定回合（Episode）開始前，建立或讀取用於保存車輛軌跡數據的 Excel 檔案。</p>
+<pre><code class="language-python"><span class="hljs-number">12</span>: <span class="hljs-keyword">def</span> <span class="hljs-title function_">open_excel</span>(<span class="hljs-params">i</span>):
+<span class="hljs-number">13</span>:     file_dir = <span class="hljs-string">&#x27;./llm_controller/excel/&#x27;</span> + <span class="hljs-string">&#x27;/&#x27;</span>
+<span class="hljs-number">14</span>:     file_name = file_dir + <span class="hljs-built_in">str</span>(i) + <span class="hljs-string">&#x27;.xlsx&#x27;</span>
+<span class="hljs-number">15</span>: 
+<span class="hljs-number">16</span>:     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.exists(file_dir):
+<span class="hljs-number">17</span>:         os.makedirs(file_dir)
+<span class="hljs-number">18</span>:     workbook = openpyxl.Workbook()
+<span class="hljs-number">19</span>:     <span class="hljs-keyword">if</span> os.path.exists(file_name):
+<span class="hljs-number">20</span>:         workbook = openpyxl.load_workbook(file_name)
+<span class="hljs-number">21</span>: 
+<span class="hljs-number">22</span>:     <span class="hljs-comment"># if &#x27;Sheet&#x27; in workbook.sheetnames:</span>
+<span class="hljs-number">23</span>:     <span class="hljs-comment">#     del workbook[&#x27;Sheet&#x27;]</span>
+<span class="hljs-number">24</span>:     <span class="hljs-keyword">return</span> file_name, workbook
+</code></pre>
+<ul>
+<li><strong>第 12-14 行</strong>：接收參數 <code>i</code>（當次回合編號），定義存儲目錄為 <code>./llm_controller/excel/</code>，檔案名為 <code>{i}.xlsx</code>。</li>
+<li><strong>第 16-17 行</strong>：檢查資料夾是否存在，若無則呼叫 <code>os.makedirs</code> 自動建立遞迴目錄。</li>
+<li><strong>第 18-20 行</strong>：新建一個 openpyxl 的 <code>Workbook</code> 工作簿物件。如果硬碟中已存在同名檔案，則使用 <code>load_workbook</code> 將其讀入以供續寫或覆蓋。</li>
+<li><strong>第 24 行</strong>：回傳建立好的檔案路徑與工作簿物件。</li>
+</ul>
+<hr>
+<h2 id="3-軌跡數據寫入模組write_data-lines-26---46">3. 軌跡數據寫入模組：<code>write_data</code> (Lines 26 - 46)</h2>
+<p>此函式在每個模擬步進（Step）執行，收集當前所有車輛的物理狀態，寫入 Excel。</p>
+<pre><code class="language-python"><span class="hljs-number">26</span>: <span class="hljs-keyword">def</span> <span class="hljs-title function_">write_data</span>(<span class="hljs-params">workbook, env, t</span>):
+<span class="hljs-number">27</span>:     column_names = [<span class="hljs-string">&#x27;t&#x27;</span>, <span class="hljs-string">&#x27;x&#x27;</span>, <span class="hljs-string">&#x27;y&#x27;</span>, <span class="hljs-string">&#x27;v&#x27;</span>, <span class="hljs-string">&#x27;theta&#x27;</span>, <span class="hljs-string">&#x27;background_veh?&#x27;</span>]
+<span class="hljs-number">28</span>:     <span class="hljs-keyword">for</span> vehicle <span class="hljs-keyword">in</span> env.road.vehicles:
+<span class="hljs-number">29</span>:         sheet_name = <span class="hljs-built_in">str</span>(vehicle.<span class="hljs-built_in">id</span>)
+<span class="hljs-number">30</span>:         <span class="hljs-keyword">if</span> sheet_name <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> workbook.sheetnames:
+<span class="hljs-number">31</span>:             worksheet = workbook.create_sheet(sheet_name)
+<span class="hljs-number">32</span>:             worksheet.append(column_names)
+<span class="hljs-number">33</span>:         <span class="hljs-keyword">else</span>:
+<span class="hljs-number">34</span>:             worksheet = workbook[sheet_name]
+<span class="hljs-number">35</span>:         controlled_vehicles = env.controlled_vehicles
+<span class="hljs-number">36</span>:         <span class="hljs-keyword">if</span> vehicle <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> controlled_vehicles:
+<span class="hljs-number">37</span>:             background_vehicles = <span class="hljs-literal">False</span>
+<span class="hljs-number">38</span>:         <span class="hljs-keyword">else</span>:
+<span class="hljs-number">39</span>:             background_vehicles = <span class="hljs-literal">True</span>
+</code></pre>
+<ul>
+<li><strong>第 26-27 行</strong>：接收工作簿、環境變數與當前步進時間 <code>t</code>。設定資料行名稱包括：時間、X坐標、Y坐標、車速、朝向角、以及是否為背景車。</li>
+<li><strong>第 28-34 行</strong>：遍歷仿真道路上的所有車輛。以每台車的唯一 <code>vehicle.id</code> 作為 Excel 分頁名稱（Sheet Name）。如果分頁不存在則新建並寫入表頭；若已存在，則獲取該分頁的物件指標。</li>
+<li><strong>第 35-39 行</strong>：檢查該車輛是否包含在受控自駕車列表 <code>env.controlled_vehicles</code> 中。若非，代表它是模擬器內建 IDM 控制的背景人類駕駛車（<code>background_vehicles = False</code>）；若是，則為受控自駕車（<code>True</code>）。</li>
+</ul>
+<pre><code class="language-python"><span class="hljs-number">40</span>:         state = [<span class="hljs-built_in">round</span>(vehicle.position[<span class="hljs-number">0</span>], <span class="hljs-number">2</span>), <span class="hljs-built_in">round</span>(vehicle.position[<span class="hljs-number">1</span>], <span class="hljs-number">2</span>), <span class="hljs-built_in">round</span>(vehicle.speed, <span class="hljs-number">2</span>), <span class="hljs-built_in">round</span>(vehicle.heading, <span class="hljs-number">2</span>), background_vehicles]
+<span class="hljs-number">41</span>:         row_data = [t, <span class="hljs-built_in">round</span>(vehicle.position[<span class="hljs-number">0</span>], <span class="hljs-number">2</span>), <span class="hljs-built_in">round</span>(vehicle.position[<span class="hljs-number">1</span>], <span class="hljs-number">2</span>), <span class="hljs-built_in">round</span>(vehicle.speed, <span class="hljs-number">2</span>), <span class="hljs-built_in">round</span>(vehicle.heading, <span class="hljs-number">2</span>), background_vehicles]
+<span class="hljs-number">42</span>:         worksheet.append(row_data)
+<span class="hljs-number">43</span>:         worksheet.cell(row=t + <span class="hljs-number">2</span>, column=<span class="hljs-number">1</span>, value=t)
+<span class="hljs-number">44</span>:         <span class="hljs-keyword">for</span> i, item <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(state):
+<span class="hljs-number">45</span>:             worksheet.cell(row=t + <span class="hljs-number">2</span>, column=i + <span class="hljs-number">2</span>, value=item)
+<span class="hljs-number">46</span>:     <span class="hljs-keyword">return</span> workbook
+</code></pre>
+<ul>
+<li><strong>第 40-42 行</strong>：將車輛的位置、速度、朝向角進行小數點兩位四捨五入，封裝入當前時間步 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> 的狀態清單並寫入分頁。</li>
+<li><strong>第 43-45 行</strong>：使用 openpyxl 逐格定位，將 <code>t</code> 寫入第一行，並將狀態寫入隨後的列中。</li>
+<li><strong>第 46 行</strong>：返回已寫入當前幀數據的工作簿物件。</li>
+</ul>
+<hr>
+<h2 id="4-仿真環境宣告-lines-48---58">4. 仿真環境宣告 (Lines 48 - 58)</h2>
+<pre><code class="language-python"><span class="hljs-number">48</span>: <span class="hljs-comment"># if choose merge, active config</span>
+<span class="hljs-number">49</span>: config = {
+<span class="hljs-number">50</span>:     <span class="hljs-string">&quot;simulation_frequency&quot;</span>: <span class="hljs-number">20</span>,
+<span class="hljs-number">51</span>:     <span class="hljs-string">&quot;policy_frequency&quot;</span>: <span class="hljs-number">5</span>,
+<span class="hljs-number">52</span>:     <span class="hljs-string">&quot;duration&quot;</span>:<span class="hljs-number">40</span>
+<span class="hljs-number">53</span>: }
+<span class="hljs-number">54</span>: 
+<span class="hljs-number">55</span>: <span class="hljs-comment"># env = gym.make(&#x27;merge-multi-agent-v0&#x27;, config=config)</span>
+<span class="hljs-number">56</span>: <span class="hljs-comment"># env = gym.make(&#x27;intersection-multi-agent-v0&#x27;)</span>
+<span class="hljs-number">57</span>: env = gym.make(<span class="hljs-string">&#x27;highway-v0&#x27;</span>)
+</code></pre>
+<ul>
+<li><strong>第 49-53 行</strong>：設定高速公路模擬器的頻率參數。物理模擬頻率為 20Hz（每秒步進 20 次），決策刷新頻率為 5Hz（每秒大模型更新 5 次），單次回合時長上限為 40 秒。</li>
+<li><strong>第 55-57 行</strong>：宣告仿真環境。註解部分展示了合流區（<code>merge-multi-agent-v0</code>）與十字路口（<code>intersection-multi-agent-v0</code>）的加載法；第 57 行正式啟用了直行高速公路（<code>highway-v0</code>）場景。</li>
+</ul>
+<hr>
+<h2 id="5-主回合循環與同步阻塞決策-lines-60---107">5. 主回合循環與同步阻塞決策 (Lines 60 - 107)</h2>
+<pre><code class="language-python"><span class="hljs-number">60</span>: <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">20</span>, <span class="hljs-number">100</span>):
+<span class="hljs-number">61</span>:     video_path = <span class="hljs-string">&#x27;./llm_controller/video/&#x27;</span> + <span class="hljs-built_in">str</span>(i) + <span class="hljs-string">&#x27;.mp4&#x27;</span>  
+<span class="hljs-number">62</span>:     writer = imageio.get_writer(video_path, fps=<span class="hljs-number">30</span>) 
+<span class="hljs-number">63</span>:     file_name, workbook = open_excel(i)
+<span class="hljs-number">64</span>:     terminated = <span class="hljs-literal">False</span>
+<span class="hljs-number">65</span>:     t = <span class="hljs-number">0</span>
+<span class="hljs-number">66</span>:     obs = env.reset()
+</code></pre>
+<ul>
+<li><strong>第 60-63 行</strong>：開始外層回合循環（此處設定補跑第 20 ~ 99 回合）。初始化影像寫入器保存為 <code>.mp4</code> 影片，並打開 Excel 工作簿。</li>
+<li><strong>第 64-66 行</strong>：重設碰撞標記 <code>terminated = False</code>，時間步計數器 <code>t = 0</code>，並初始化仿真場景物理世界（<code>env.reset()</code>）。</li>
+</ul>
+<pre><code class="language-python"><span class="hljs-number">67</span>:     <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> (terminated):
+<span class="hljs-number">68</span>:         <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;---------------------------------------------------------------&#x27;</span>)
+<span class="hljs-number">69</span>:         <span class="hljs-comment"># memory module</span>
+<span class="hljs-number">70</span>:         memory = DrivingMemory(env)
+<span class="hljs-number">71</span>: 
+<span class="hljs-number">72</span>:         <span class="hljs-comment"># negotiation module</span>
+<span class="hljs-number">73</span>:         llm_agent_conflict_resolver = LlmAgent_negotiation_module(env)  <span class="hljs-comment"># system perspective negotiation</span>
+<span class="hljs-number">74</span>:         negotiation_prompt, conflicting_info = llm_agent_conflict_resolver.llm_controller_run(env)
+</code></pre>
+<ul>
+<li><strong>第 67-70 行</strong>：進入內層時間步迴圈，直到車輛碰撞或抵達終點。在每一步開始時，實例化 <code>DrivingMemory</code>，這會直接在硬碟中連接 SQLite3 客戶端。</li>
+<li><strong>第 72-74 行</strong>：<strong>車路協商（同步阻塞 1）</strong>：建立路側單元 RSU 協商代理，同步調用大模型進行優先級協商。主線程此時卡死，直到 Ollama 回傳車輛讓行建議。</li>
+</ul>
+<pre><code class="language-python"><span class="hljs-number">76</span>:         <span class="hljs-comment"># decision</span>
+<span class="hljs-number">77</span>:         llm_agent = LlmAgent_action_module(env)  
+<span class="hljs-number">78</span>:         sce = llm_agent.retrun_sce()  <span class="hljs-comment"># sce data</span>
+<span class="hljs-number">79</span>:         llm_actions = llm_agent.llm_controller_run(env, negotiation_prompt, conflicting_info, env.controlled_vehicles, memory)  <span class="hljs-comment"># negotiation results from upper layer and conflict info which stores distance speed</span>
+</code></pre>
+<ul>
+<li><strong>第 76-80 行</strong>：<strong>單車決策（同步阻塞 2）</strong>：建立決策模組代理。將剛才路側協商得到的優先級建議（<code>negotiation_prompt</code>）、衝突距離資訊以及記憶庫物件傳入。此時主線程<strong>再次卡死</strong>，等待大模型推導出車輛的動作。</li>
+</ul>
+<pre><code class="language-python"><span class="hljs-number">82</span>:         action = [item <span class="hljs-keyword">for</span> sublist <span class="hljs-keyword">in</span> llm_actions <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> sublist]  <span class="hljs-comment"># [[1], [3]]-&gt;[1, 3]</span>
+<span class="hljs-number">83</span>: 
+<span class="hljs-number">84</span>:         <span class="hljs-keyword">for</span> veh <span class="hljs-keyword">in</span> env.controlled_vehicles:
+<span class="hljs-number">85</span>:             <span class="hljs-built_in">print</span>(veh, veh.speed)
+<span class="hljs-number">86</span>: 
+<span class="hljs-number">87</span>:         obs, global_reward, terminated, info = env.step(<span class="hljs-built_in">tuple</span>(action), env)
+<span class="hljs-number">88</span>:         env.render()
+<span class="hljs-number">89</span>:         <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;llm_actions:&quot;</span>, action)
+<span class="hljs-number">90</span>:         <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;global_reward_llm:&quot;</span>, global_reward)
+</code></pre>
+<ul>
+<li><strong>第 82-87 行</strong>：將所有受控車輛的二維動作列表（例如 <code>[[1], [3]]</code>）扁平化為一維元組（<code>(1, 3)</code>），並傳遞給 <code>env.step</code> 驅動車輛在模擬器中前進。</li>
+<li><strong>第 88-90 行</strong>：渲染模擬器畫面，並印出當前步進中大模型的決策動作與全域回報值。</li>
+</ul>
+<pre><code class="language-python"><span class="hljs-number">92</span>:         frame = env.render(<span class="hljs-string">&#x27;rgb_array&#x27;</span>)
+<span class="hljs-number">93</span>:         writer.append_data(frame)
+<span class="hljs-number">94</span>: 
+<span class="hljs-number">95</span>:         workbook = write_data(workbook, env, t)
+<span class="hljs-number">96</span>:         workbook.save(file_name)
+<span class="hljs-number">97</span>:         t += <span class="hljs-number">1</span>
+</code></pre>
+<ul>
+<li><strong>第 92-97 行</strong>：將物理模擬器渲染出的圖像陣列（RGB Array）寫入影片檔。調用前述的 <code>write_data</code> 寫入當前物理軌跡數據並實時存檔到硬碟。時間步 <code>t</code> 累加 1。</li>
+</ul>
+<pre><code class="language-python"><span class="hljs-number">103</span>:         env.render()
+<span class="hljs-number">104</span>:     writer.close()
+<span class="hljs-number">105</span>:     <span class="hljs-built_in">print</span>(i)
+</code></pre>
+<ul>
+<li><strong>第 104-105 行</strong>：當單次 Episode 結束（碰撞或超時），關閉影片寫入器，完成該回合影片的封裝，並列印當前回合 ID，準備進入下一輪。</li>
+</ul>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
