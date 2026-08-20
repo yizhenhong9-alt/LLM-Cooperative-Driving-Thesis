@@ -54,8 +54,11 @@ class ParallelAgentCoordination:
         self.shared_conflicting_info = ""
         self.shared_reasoner_actions = {}  # maps vehicle ID to latest recommended action string
         self.shared_reasoner_styles = {}   # maps vehicle ID to latest estimated driving style
+        self.last_actor_action_trace = []
         
-        self.stop_threads = False
+        self.stop_event = threading.Event()
+        self.lifecycle_lock = threading.Lock()
+        self.reasoner_future = None
         # Main background executor for the Reasoner loop thread
         self.reasoner_thread_executor = ThreadPoolExecutor(max_workers=1)
         # Parallel executor for simultaneous LLM API calls for multiple CAVs
@@ -63,22 +66,28 @@ class ParallelAgentCoordination:
         self.lock = threading.Lock()
         
     def start_reasoner(self, env):
-        self.stop_threads = False
-        self.reasoner_thread_executor.submit(self.reasoner_loop, env)
+        with self.lifecycle_lock:
+            self.stop_event.clear()
+            self.reasoner_future = self.reasoner_thread_executor.submit(self.reasoner_loop, env)
         print("========== Reasoner Thread Started (1Hz Background loop) ==========")
         
     def stop_reasoner(self):
-        self.stop_threads = True
-        self.reasoner_thread_executor.shutdown(wait=False)
-        self.api_executor.shutdown(wait=False)
+        with self.lifecycle_lock:
+            self.stop_event.set()
+
+        self.reasoner_thread_executor.shutdown(wait=True)
+        self.api_executor.shutdown(wait=True)
         print("========== Reasoner Thread Stopped ==========")
 
     def reasoner_loop(self, env):
         """Asynchronous Reasoner loop running at 1Hz in the background"""
-        while not self.stop_threads:
+        while not self.stop_event.is_set():
             try:
                 # 1. Run V2X conflict detection & priority scheduling
                 negotiation_prompt, conflicting_info = self.negotiator.llm_controller_run(env)
+
+                if self.stop_event.is_set():
+                    break
                 
                 with self.lock:
                     self.shared_negotiation_prompt = negotiation_prompt
@@ -88,7 +97,7 @@ class ParallelAgentCoordination:
                 
                 # 2. Concurrently query LLM actions and style estimators for all CAVs
                 def process_single_cav(ego_veh):
-                    if self.stop_threads:
+                    if self.stop_event.is_set():
                         return
                     try:
                         scene_name = self.action_module.get_scene_name(env)
@@ -97,17 +106,19 @@ class ParallelAgentCoordination:
                         
                         negotiation_results = self.action_module.transfer_negotiation_prompts_to_results(ego_veh, negotiation_prompt)
                         prompt_info = self.action_module.prompt_engineer(ego_veh, env.road, env, negotiation_results, conflicting_info)
+
+                        if self.stop_event.is_set():
+                            return
                         
                         # Call API (returns [llm_action_id_arr, style, intention])
                         action_val = self.action_module.send_to_chatgpt(ego_veh, prompt_info, negotiation_results, self.memory)
+
+                        if self.stop_event.is_set():
+                            return
                         
                         # Store style estimation directly on the vehicle object for relative memory queries
                         ego_veh.estimated_style = action_val[1]
                         ego_veh.estimated_intention = action_val[2]
-                        
-                        # Update database memory
-                        if self.is_training:
-                            self.action_module.memory_update(self.memory, prompt_info, action_val)
                         
                         with self.lock:
                             self.shared_reasoner_actions[id(ego_veh)] = action_val[0]
@@ -115,8 +126,11 @@ class ParallelAgentCoordination:
                     except Exception as e:
                         print(f"Error in parallel reasoning for vehicle {id(ego_veh)}: {e}")
 
-                # Submit all queries concurrently to the thread pool
-                futures = [self.api_executor.submit(process_single_cav, v) for v in controlled_vehs]
+                # Submit all queries concurrently to the thread pool unless shutdown has begun
+                with self.lifecycle_lock:
+                    if self.stop_event.is_set():
+                        break
+                    futures = [self.api_executor.submit(process_single_cav, v) for v in controlled_vehs]
                 
                 # Wait for all parallel API requests to finish
                 for fut in futures:
@@ -124,17 +138,19 @@ class ParallelAgentCoordination:
                     
             except RuntimeError as e:
                 # If we are shutting down the simulation, cannot schedule new futures is expected and can be ignored
-                if not self.stop_threads:
+                if not self.stop_event.is_set():
                     print(f"Warning: Reasoner loop encountered a runtime error: {e}")
             except Exception as e:
-                print(f"Warning: Reasoner loop encountered an exception: {e}")
+                if not self.stop_event.is_set():
+                    print(f"Warning: Reasoner loop encountered an exception: {e}")
             
             # Sleep 1.0s to simulate 1Hz loop frequency
-            time.sleep(1.0)
+            self.stop_event.wait(1.0)
 
     def get_actor_actions(self, env, memory):
         """High-frequency Actor loop running at >40Hz in the main thread"""
         actor_actions = []
+        action_trace = []
         controlled_vehs = list(env.controlled_vehicles)
         
         with self.lock:
@@ -153,6 +169,8 @@ class ParallelAgentCoordination:
             
             # 1. Fast Memory Retrieval from style partition using NumPy RAM cache
             style = reasoner_styles.get(id(veh), 'normal')
+            intention = getattr(veh, 'estimated_intention', 'GENERAL')
+            reasoner_candidate = clean_action_str(reasoner_actions.get(id(veh), "IDLE"))
             query_scenario = prompt_info + f"\nInteraction vehicle driving style: {style}"
             
             retrieved_mem = memory.retrieveMemory_fast(query_scenario, top_k=1)
@@ -161,11 +179,15 @@ class ParallelAgentCoordination:
             if retrieved_mem and len(retrieved_mem) > 0:
                 raw_action = retrieved_mem[0]['final_action']
                 action_str = clean_action_str(raw_action)
+                action_source = "memory"
                 print(f"[Actor Fast Retrieve] CAV {veh_display_id} retrieved action: {action_str} (raw: {raw_action}) [Style Partition: {style}]")
             else:
                 raw_action = reasoner_actions.get(id(veh), "IDLE")
                 action_str = clean_action_str(raw_action)
+                action_source = "reasoner"
                 print(f"[Actor Fallback] CAV {veh_display_id} using Reasoner action: {action_str} (raw: {raw_action})")
+
+            actor_selected_action = action_str
                 
             # 2. Refined Geometric Safety Shield (Frenet heading-projection check)
             # Adjust safety margin depending on whether the estimated style is aggressive
@@ -203,5 +225,25 @@ class ParallelAgentCoordination:
                 
             action_id = ACTIONS_ALL.get(action_str, 1)
             actor_actions.append([action_id])
+            action_trace.append({
+                "vehicle_id": veh_display_id,
+                "vehicle_index": len(action_trace),
+                "prompt_info": prompt_info,
+                "style": style,
+                "intention": intention,
+                "reasoner_candidate_action": reasoner_candidate,
+                "actor_selected_action": actor_selected_action,
+                "action_source": action_source,
+                "final_action": action_str,
+                "final_action_id": action_id,
+                "shield_overrode": actor_selected_action != action_str,
+            })
+
+        with self.lock:
+            self.last_actor_action_trace = action_trace
             
         return actor_actions
+
+    def get_last_actor_action_trace(self):
+        with self.lock:
+            return [trace.copy() for trace in self.last_actor_action_trace]

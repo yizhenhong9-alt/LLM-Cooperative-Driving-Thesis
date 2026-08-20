@@ -21,16 +21,19 @@ class LlmAgent_negotiation_module():
             isDecelerationSafe(self.sce),
         ]
         provider = os.getenv("LLM_PROVIDER", "openai").lower()
+        request_timeout = float(os.getenv("LLM_REQUEST_TIMEOUT_SECONDS", "60"))
         if provider == "ollama":
             self.client = OpenAI(
                 api_key=os.getenv("LLM_API_KEY"),
-                base_url=os.getenv("LLM_API_BASE", "http://127.0.0.1:11434/v1")
+                base_url=os.getenv("LLM_API_BASE", "http://127.0.0.1:11434/v1"),
+                timeout=request_timeout
             )
             self.model_name = os.getenv("LLM_MODEL", "qwen2.5:7b")
         else:
             self.client = OpenAI(
                 api_key=os.getenv("LLM_API_KEY"),
-                base_url=os.getenv("LLM_API_BASE", "https://api.openai.com/v1")
+                base_url=os.getenv("LLM_API_BASE", "https://api.openai.com/v1"),
+                timeout=request_timeout
             )
             self.model_name = os.getenv("LLM_MODEL", "gpt-4o-mini")
 

@@ -61,6 +61,38 @@ def write_data(workbook, env, t):
             worksheet.cell(row=t + 2, column=i + 2, value=item)
     return workbook
 
+def validate_dispatched_action(vehicle, action_trace, dispatched_action):
+    if dispatched_action != action_trace['final_action_id']:
+        return False, 'post-shield action was not dispatched'
+    if vehicle.crashed:
+        return False, 'vehicle crashed before completing 2-step horizon'
+    if not vehicle.on_road:
+        return False, 'vehicle went off-road before completing 2-step horizon'
+    return True, None
+
+def log_validation_status(transition, status, reason=None):
+    message = (
+        f"[Validated Memory] CAV {transition['vehicle_id']} | "
+        f"Origin step: {transition['origin_step']} | "
+        f"Executed: {transition['final_action']} | "
+        f"Status: {status}"
+    )
+    if reason:
+        message += f" | Reason: {reason}"
+    print(message)
+
+def write_validated_transition(memory, action_module, transition):
+    executed_action_val = [
+        np.array([transition['final_action_id']]),
+        transition['style'],
+        transition['intention'],
+    ]
+    action_module.memory_update(
+        memory,
+        transition['prompt_info'],
+        executed_action_val
+    )
+
 # Set up environment (enable merge or intersection or highway)
 parser = argparse.ArgumentParser(description="Run parallel-agent training.")
 parser.add_argument(
@@ -115,6 +147,7 @@ for i in range(episodes):
     
     # Store history of prompts and actions to allow self-reflection upon collision
     episode_history = []
+    pending_transitions = []
     
     while not terminated:
         print('---------------------------------------------------------------')
@@ -123,6 +156,7 @@ for i in range(episodes):
         # 1. Fast RAG retrieval and safety verification
         llm_actions = coordinator.get_actor_actions(env, memory)
         action = [item for sublist in llm_actions for item in sublist]
+        action_trace = coordinator.get_last_actor_action_trace()
         
         # Record prompt context and action taken
         latest_negotiation_results = coordinator.action_module.transfer_negotiation_prompts_to_results(
@@ -139,6 +173,87 @@ for i in range(episodes):
         })
         
         obs, global_reward, terminated, info = env.step(tuple(action), env)
+
+        # First give only transitions from earlier steps their next observation.
+        # This snapshot prevents a new transition from being observed twice here.
+        older_pending = pending_transitions
+        pending_transitions = []
+        for transition in older_pending:
+            vehicle_index = transition['vehicle_index']
+            if vehicle_index >= len(env.controlled_vehicles):
+                log_validation_status(
+                    transition,
+                    'REJECTED',
+                    'controlled-vehicle index no longer exists'
+                )
+                continue
+
+            vehicle = env.controlled_vehicles[vehicle_index]
+            same_vehicle = getattr(vehicle, 'id', id(vehicle)) == transition['vehicle_id']
+            if not same_vehicle:
+                log_validation_status(
+                    transition,
+                    'REJECTED',
+                    'controlled-vehicle identity changed'
+                )
+                continue
+
+            survived, failure_reason = validate_dispatched_action(
+                vehicle, transition, transition['final_action_id']
+            )
+            if not survived:
+                log_validation_status(transition, 'REJECTED', failure_reason)
+                continue
+
+            transition['survival_count'] += 1
+            if transition['survival_count'] == 2:
+                write_validated_transition(
+                    memory, coordinator.action_module, transition
+                )
+                log_validation_status(transition, 'ACCEPTED (2/2)')
+            else:
+                pending_transitions.append(transition)
+                log_validation_status(
+                    transition,
+                    f"PENDING ({transition['survival_count']}/2)"
+                )
+
+        # Then create transitions for actions executed by this env.step(). Each
+        # new transition receives only its first post-step survival observation.
+        dispatch_aligned = len(action) == len(action_trace) == len(env.controlled_vehicles)
+        for vehicle_index, vehicle in enumerate(env.controlled_vehicles):
+            if dispatch_aligned:
+                transition = dict(action_trace[vehicle_index])
+                transition['vehicle_index'] = vehicle_index
+                transition['origin_step'] = t
+                transition['survival_count'] = 0
+                dispatched_action = action[vehicle_index]
+                survived, validation_reason = validate_dispatched_action(
+                    vehicle, transition, dispatched_action
+                )
+            else:
+                transition = dict(action_trace[vehicle_index]) if vehicle_index < len(action_trace) else {
+                    'vehicle_id': getattr(vehicle, 'id', id(vehicle)),
+                    'actor_selected_action': 'UNKNOWN',
+                    'final_action': 'UNKNOWN',
+                    'final_action_id': None,
+                    'shield_overrode': False,
+                }
+                transition['vehicle_index'] = vehicle_index
+                transition['origin_step'] = t
+                transition['survival_count'] = 0
+                survived = False
+                validation_reason = 'CAV/action trace alignment mismatch'
+
+            if survived:
+                transition['survival_count'] = 1
+                pending_transitions.append(transition)
+                log_validation_status(transition, 'PENDING (1/2)')
+            else:
+                log_validation_status(
+                    transition, 'REJECTED', validation_reason
+                )
+
         env.render()
         
         print("Action executed:", action)
@@ -153,6 +268,15 @@ for i in range(episodes):
         
         # Check for collision
         is_collision = info.get("cav_crashed", False)
+        if terminated or is_collision:
+            for transition in pending_transitions:
+                log_validation_status(
+                    transition,
+                    'CENSORED',
+                    'episode ended before completing validation horizon'
+                )
+            pending_transitions.clear()
+
         if is_collision:
             print("❌ COLLISION DETECTED! Triggering Self-Reflection Refinement Loop...")
             
@@ -192,19 +316,10 @@ for i in range(episodes):
                     if match_act:
                         correct_action = match_act.group(1).upper()
                         comment = match_reason.group(1) if match_reason else "avoid collision"
-                        
-                        # Add the corrected experience into the database
-                        style = getattr(env.controlled_vehicles[0], "estimated_style", "normal")
-                        sce_descrip = prompt_info + f"\nInteraction vehicle driving style: {style}\nInteraction vehicle intention: GENERAL"
-                        
-                        memory.addMemory(
-                            sce_descrip=sce_descrip,
-                            human_question=str(None),
-                            negotiation=last_state['negotiation'],
-                            action=correct_action,
-                            comments=f"Self-Correction: {comment}"
+                        print(
+                            f"Self-Correction generated for analysis only: "
+                            f"{correct_action} ({comment}). Not added to validated Actor memory."
                         )
-                        print(f"✅ Self-Correction memory successfully added to {style} partition!")
                 except Exception as ex:
                     print(f"Failed to complete self-reflection: {ex}")
             break
