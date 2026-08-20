@@ -1,0 +1,522 @@
+==========Loaded  ./db/merge-multi-agent-v0  Memory, Now the database has  303  items.==========
+==========Loaded memory DB, now has 303 items.==========
+========== Reasoner Thread Started (1Hz Background loop) ==========
+---------------------------------------------------------------
+Step 0 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [48.60999292  0.        ] 15.387700435765897
+MDPVehicle #512: [ 3.85008121 10.5       ] 15.544632804133167
+MDPVehicle #976: [205.7538421  10.5      ] 16.437211867202333
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.3513675973452542
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (1200, 120) to (1200, 128) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+---------------------------------------------------------------
+Step 1 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [51.79656798  0.        ] 16.743408665125795
+MDPVehicle #512: [ 7.06433285 10.5       ] 16.854213391459957
+MDPVehicle #976: [209.11415108  10.22673848] 17.4844337841295
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.3950556034303563
+---------------------------------------------------------------
+Step 2 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [55.22223568  0.        ] 17.700629160209626
+MDPVehicle #512: [10.50954207 10.5       ] 17.778864692533045
+MDPVehicle #976: [212.64671296   9.8167984 ] 18.223842353078705
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4259022516311654
+---------------------------------------------------------------
+Step 3 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [58.81671875  0.        ] 18.376490718298086
+MDPVehicle #512: [14.11782275 10.5       ] 18.43173022585727
+MDPVehicle #976: [216.30096648   9.32844677] 18.74591415371457
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.44768204408429263
+---------------------------------------------------------------
+Step 4 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [62.53039673  0.        ] 18.853694087895555
+MDPVehicle #512: [17.84124277 10.5       ] 18.892696867128485
+MDPVehicle #976: [220.04360794   8.80673386] 19.11453169003352
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.46306003122290357
+---------------------------------------------------------------
+Step 5 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [66.32823427  0.        ] 19.190631517210594
+MDPVehicle #512: [21.64595884 10.5       ] 19.218170082543793
+MDPVehicle #976: [223.85139966   8.28156497] 19.374800273619826
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.47391791652847853
+---------------------------------------------------------------
+Step 6 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [70.18549408  0.        ] 19.428531830800555
+MDPVehicle #512: [25.50807535 10.5       ] 19.447975895955036
+MDPVehicle #976: [227.70732484   7.76983008] 19.55856726495312
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4815843082510345
+---------------------------------------------------------------
+Step 7 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [74.08470998  0.        ] 19.596505330572477
+MDPVehicle #512: [29.4107204 10.5      ] 19.610234138342864
+MDPVehicle #976: [231.5986091    7.27880293] 19.68831902614673
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.48699729249148316
+---------------------------------------------------------------
+Step 8 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [78.01354968  0.        ] 19.715105832605694
+MDPVehicle #512: [33.34198132 10.5       ] 19.724799287204757
+MDPVehicle #976: [235.51562022   6.80948588] 19.779932429678542
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4908192206485245
+---------------------------------------------------------------
+Step 9 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+{MDPVehicle #448: [81.96330576  0.        ]: {}, MDPVehicle #512: [37.29344693 10.5       ]: {}, MDPVehicle #976: [239.45114633   6.35934847]: {}, IDMVehicle #432: [119.03646764   0.        ]: {}, IDMVehicle #0: [194.32559755  10.5       ]: {}, IDMVehicle #48: [74.26222693 10.5       ]: {}}
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [81.96330576  0.        ] 19.798845702892553
+MDPVehicle #512: [37.29344693 10.5       ] 19.80568992881775
+MDPVehicle #976: [239.45114633   6.35934847] 19.84461760720117
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.49351775701750816
+---------------------------------------------------------------
+Step 10 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [85.9278302  0.       ] 19.857971640434503
+MDPVehicle #512: [41.25917842 10.5       ] 19.862804120747526
+MDPVehicle #976: [243.39984914   5.92431308] 19.890289659868458
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.49542310380465554
+---------------------------------------------------------------
+Step 11 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [89.90278208  0.        ] 19.899718498630477
+MDPVehicle #512: [45.23498256 10.5       ] 19.903130552269705
+MDPVehicle #976: [247.35782509   5.50004231] 19.92253717737915
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4967684058065182
+---------------------------------------------------------------
+Step 12 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [93.88509644  0.        ] 19.929194566861923
+MDPVehicle #512: [49.21789867 10.5       ] 19.931603704464735
+MDPVehicle #976: [251.32225331   5.08266697] 19.945306077064437
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.49771827881043756
+---------------------------------------------------------------
+Step 13 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+llm action: SLOWER
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [97.8726092  0.       ] 19.950006638378927
+MDPVehicle #512: [53.2058363 10.5      ] 19.951707650321577
+MDPVehicle #976: [255.29111936   4.66911149] 19.96138243992575
+ New mem has been added ...
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4983889525493643
+---------------------------------------------------------------
+Step 14 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: SLOWER (raw: [4])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: SLOWER (raw: [4])
+MDPVehicle #448: [101.86379237   0.        ] 19.964701349947234
+MDPVehicle #512: [57.19731946 10.5       ] 19.965902377910794
+MDPVehicle #976: [259.26300255   4.25715823] 19.97273342510383
+llm_actions: [4, 3, 4]
+global_reward_llm: 0.44987361694357203
+---------------------------------------------------------------
+Step 15 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: SLOWER (raw: [4])
+[Actor Fast Retrieve] CAV 2 retrieved action: SLOWER (raw: [4])
+MDPVehicle #448: [105.73936687   0.        ] 18.505410516231553
+MDPVehicle #512: [61.19130601 10.5       ] 19.975924802999224
+MDPVehicle #976: [263.11935134   3.85761663] 18.511081697383545
+llm_actions: [3, 4, 4]
+global_reward_llm: 0.4156185519067083
+---------------------------------------------------------------
+Step 16 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: SLOWER (raw: [4])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [109.47578114   0.        ] 18.944720069837295
+MDPVehicle #512: [65.06885987 10.5       ] 18.513335023182467
+MDPVehicle #976: [266.71926261   3.4843201 ] 17.479058021382738
+llm_actions: [3, 4, 3]
+global_reward_llm: 0.4159266276909457
+llm action: IDLE
+ New mem has been added ...
+---------------------------------------------------------------
+Step 17 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [113.28967202   0.        ] 19.254901935883865
+MDPVehicle #512: [68.68847148 10.5       ] 17.480649019792367
+MDPVehicle #976: [270.25562653   3.11683188] 18.22004670578051
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.44063858777117754
+---------------------------------------------------------------
+Step 18 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [117.15826656   0.        ] 19.473911036037602
+MDPVehicle #512: [72.24415885 10.5       ] 18.221170056847033
+MDPVehicle #976: [273.92187009   2.7348642 ] 18.743234173386014
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4580868809586136
+---------------------------------------------------------------
+Step 19 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [121.06548553   0.        ] 19.62854607825167
+MDPVehicle #512: [75.93044449 10.5       ] 18.744027334215733
+MDPVehicle #976: [277.67978787   2.34239218] 19.112639445049414
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4704065405148081
+llm action: FASTER
+ New mem has been added ...
+---------------------------------------------------------------
+Step 20 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [124.99997594   0.        ] 19.737728738989325
+MDPVehicle #512: [79.70894121 10.5       ] 19.113199469533786
+MDPVehicle #976: [281.50241756   1.94234976] 19.373464222365374
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.47910504242270946
+---------------------------------------------------------------
+Step 21 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [128.95372179   0.        ] 19.81481898473875
+MDPVehicle #512: [83.55254511 10.5       ] 19.37385963702952
+MDPVehicle #976: [285.3707316    1.53690034] 19.5576239235943
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4852467653409958
+---------------------------------------------------------------
+Step 22 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [132.92106327   0.        ] 19.869249843535883
+MDPVehicle #512: [87.44211902 10.5       ] 19.55790311273867
+MDPVehicle #976: [289.27130141   1.12762975] 19.687652964185194
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.48958323164339884
+---------------------------------------------------------------
+Step 23 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [136.89800418   0.        ] 19.907681662770486
+MDPVehicle #512: [91.36415083 10.5       ] 19.68785009035527
+MDPVehicle #976: [293.19464891   0.7156895 ] 19.779462145478178
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.49264506628525284
+---------------------------------------------------------------
+Step 24 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [140.88172293   0.        ] 19.934817092236816
+MDPVehicle #512: [95.30910009 10.5       ] 19.779601329711202
+MDPVehicle #976: [297.13408331   0.3019058 ] 19.84428555516715
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4948069259009638
+---------------------------------------------------------------
+Step 25 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [144.87022727   0.        ] 19.953976516562463
+MDPVehicle #512: [99.27023059 10.5       ] 19.844383828525352
+MDPVehicle #976: [ 3.01094303e+02 -3.01976036e-03] 19.890055208970015
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.49633334308044036
+---------------------------------------------------------------
+Step 26 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [148.86211057   0.        ] 19.967504348909674
+MDPVehicle #512: [103.24278613  10.5       ] 19.890124596520046
+MDPVehicle #976: [ 3.0507170e+02 -1.5986307e-01] 19.9223716393967
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.4676100650309991
+---------------------------------------------------------------
+Step 27 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [152.85637964   0.        ] 19.97705590144611
+MDPVehicle #512: [107.22340851  10.5       ] 19.92242063163821
+MDPVehicle #976: [ 3.09057434e+02 -2.24336865e-01] 19.94518919620019
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.42521590708559964
+---------------------------------------------------------------
+Step 28 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [156.85233322   0.        ] 19.983799935044004
+MDPVehicle #512: [111.20972662  10.5       ] 19.94522378799262
+MDPVehicle #976: [ 3.13047744e+02 -2.29765570e-01] 19.96129991423452
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.38180929707483163
+---------------------------------------------------------------
+Step 29 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [160.84947618   0.        ] 19.988561672886732
+MDPVehicle #512: [115.20006628  10.5       ] 19.961324338348764
+MDPVehicle #976: [ 3.17040819e+02 -2.02227423e-01] 19.972675156457736
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.3247590553125129
+---------------------------------------------------------------
+Step 30 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [164.84745891   0.        ] 19.991923777620304
+MDPVehicle #512: [119.19324545  10.5       ] 19.972692401512553
+MDPVehicle #976: [ 3.21035780e+02 -1.60350172e-01] 19.980706836694527
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.23979467635256344
+{MDPVehicle #448: [168.84603459   0.        ]: {}, MDPVehicle #512: [123.18842948  10.5       ]: {}, MDPVehicle #976: [ 3.25032134e+02 -1.16209044e-01]: {}, IDMVehicle #432: [191.92689941   0.        ]: {IDMVehicle #0: [249.89700738   5.26037719]: 105.18999397216794}, IDMVehicle #0: [249.89700738   5.26037719]: {IDMVehicle #432: [191.92689941   0.        ]: 43.45137269841507}, IDMVehicle #48: [143.70396961  10.5       ]: {}}
+---------------------------------------------------------------
+Step 31 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [168.84603459   0.        ] 19.994297647961943
+MDPVehicle #512: [123.18842948  10.5       ] 19.980719012854227
+MDPVehicle #976: [ 3.25032134e+02 -1.16209044e-01] 19.98637773900678
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.15230083792408702
+---------------------------------------------------------------
+Step 32 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [172.84502893   0.        ] 19.99597375886433
+MDPVehicle #512: [127.18502909  10.5       ] 19.98638633618821
+MDPVehicle #976: [ 3.29029536e+02 -7.66951845e-02] 19.990381774536953
+llm_actions: [3, 3, 3]
+global_reward_llm: 0.062066133697429825
+---------------------------------------------------------------
+Step 33 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [176.84431886   0.        ] 19.997157205031474
+MDPVehicle #512: [131.18262818  10.5       ] 19.990387844720853
+MDPVehicle #976: [ 3.33027713e+02 -4.49540784e-02] 19.993208890865915
+llm_actions: [3, 3, 3]
+global_reward_llm: -0.031134435988176296
+---------------------------------------------------------------
+Step 34 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [180.8438175   0.       ] 19.997992797013204
+MDPVehicle #512: [135.18093298  10.5       ] 19.99321317682089
+MDPVehicle #976: [ 3.37026447e+02 -2.16692119e-02] 19.995205023686722
+llm_actions: [3, 3, 3]
+global_reward_llm: -0.12754371816158733
+---------------------------------------------------------------
+Step 35 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [184.84346351   0.        ] 19.998582780722913
+MDPVehicle #512: [139.17973606  10.5       ] 19.995208049856995
+MDPVehicle #976: [ 3.41025570e+02 -6.09002124e-03] 19.996614426687756
+llm_actions: [3, 3, 3]
+global_reward_llm: -0.2274267756787515
+---------------------------------------------------------------
+Step 36 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [188.84321357   0.        ] 19.99899934859974
+MDPVehicle #512: [143.17889095  10.5       ] 19.99661656336595
+MDPVehicle #976: [3.45024962e+02 3.21660453e-03] 19.997609559275435
+llm_actions: [3, 3, 3]
+global_reward_llm: -0.33107563115486194
+---------------------------------------------------------------
+Step 37 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [192.8430371   0.       ] 19.999293473324112
+MDPVehicle #512: [147.17829425  10.5       ] 19.99761106791285
+MDPVehicle #976: [3.49024537e+02 7.86565045e-03] 19.99831218930129
+llm_actions: [3, 3, 3]
+global_reward_llm: -0.43881464182610125
+llm action: SLOWER
+ New mem has been added ...
+---------------------------------------------------------------
+Step 38 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: SLOWER (raw: [4])
+[Actor Fast Retrieve] CAV 1 retrieved action: SLOWER (raw: [4])
+[Actor Fast Retrieve] CAV 2 retrieved action: SLOWER (raw: [4])
+MDPVehicle #448: [196.84291249   0.        ] 19.99950114501053
+MDPVehicle #512: [151.17787294  10.5       ] 19.9983132545
+MDPVehicle #976: [3.53024239e+02 9.35672114e-03] 19.998808292995765
+llm_actions: [4, 4, 4]
+global_reward_llm: -0.40260882697664674
+---------------------------------------------------------------
+Step 39 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [200.72462428   0.        ] 18.529981494217747
+MDPVehicle #512: [155.05937523  10.5       ] 18.529142764232954
+MDPVehicle #976: [3.56905829e+02 8.88270904e-03] 18.529492294451728
+llm_actions: [3, 3, 3]
+global_reward_llm: -0.5308812521244666
+llm action: FASTER
+---------------------------------------------------------------
+Step 40 (Parallel Actor-Reasoner Control Loop)
+ New mem has been added ...
+[Actor Fast Retrieve] CAV 0 retrieved action: SLOWER (raw: [4])
+[Actor Fast Retrieve] CAV 1 retrieved action: SLOWER (raw: [4])
+[Actor Fast Retrieve] CAV 2 retrieved action: SLOWER (raw: [4])
+MDPVehicle #448: [204.46537189   0.        ] 18.962068820256658
+MDPVehicle #512: [158.79997492  10.5       ] 18.961476620907344
+MDPVehicle #976: [3.60646490e+02 7.41491855e-03] 18.961723412570784
+llm_actions: [4, 4, 4]
+global_reward_llm: -0.5217389534574803
+---------------------------------------------------------------
+Step 41 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: SLOWER (raw: [4])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [208.16412216   0.        ] 17.797485030737736
+MDPVehicle #512: [162.49862075  10.5       ] 17.79706689847147
+MDPVehicle #976: [3.64345179e+02 5.65367325e-03] 17.79724114985768
+llm_actions: [4, 3, 3]
+global_reward_llm: -0.5924538089154922
+---------------------------------------------------------------
+Step 42 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+llm action: IDLE
+[Actor Fast Retrieve] CAV 1 retrieved action: SLOWER (raw: [4])
+ New mem has been added ...
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [211.65748649   0.        ] 16.975211146558216
+MDPVehicle #512: [166.11011157  10.5       ] 18.444582198134682
+MDPVehicle #976: [3.67956700e+02 3.96800596e-03] 18.444705231243553
+llm_actions: [3, 4, 3]
+global_reward_llm: -0.6862280854144353
+---------------------------------------------------------------
+Step 43 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [215.12403487   0.        ] 17.864297183485668
+MDPVehicle #512: [169.71759793  10.5       ] 17.43210493648196
+MDPVehicle #976: [3.71682408e+02 2.50431685e-03] 18.901858086932716
+llm_actions: [3, 3, 3]
+global_reward_llm: -0.8911575980961574
+---------------------------------------------------------------
+Step 44 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [218.74738242   0.        ] 18.49205126656123
+MDPVehicle #512: [173.26472407  10.5       ] 18.186894694011976
+MDPVehicle #976: [3.75488740e+02 1.36043477e-03] 19.224638515180455
+llm_actions: [3, 3, 3]
+global_reward_llm: -1.1156513584328513
+---------------------------------------------------------------
+Step 45 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [222.48144065   0.        ] 18.935287547922595
+MDPVehicle #512: [176.9449649  10.5      ] 18.71982664038529
+MDPVehicle #976: [3.79351997e+02 5.47786329e-04] 19.45254304112447
+llm_actions: [3, 3, 3]
+global_reward_llm: -1.3680421327146794
+---------------------------------------------------------------
+Step 46 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [226.29366801   0.        ] 19.248241945849475
+MDPVehicle #512: [180.71919359  10.5       ] 19.096112164442562
+MDPVehicle #976: [3.83255447e+02 2.73138139e-05] 19.613458847661235
+llm_actions: [3, 3, 3]
+global_reward_llm: -1.6583717835250038
+---------------------------------------------------------------
+Step 47 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [230.161088   0.      ] 19.469208638560097
+MDPVehicle #512: [184.55978397  10.5       ] 19.361794859162984
+MDPVehicle #976: [ 3.87187277e+02 -2.62458121e-04] 19.72707614721297
+llm_actions: [3, 3, 3]
+global_reward_llm: -2.001590537925248
+---------------------------------------------------------------
+Step 48 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [234.06747766   0.        ] 19.62522587177654
+MDPVehicle #512: [188.44723014  10.5       ] 19.54938457431545
+MDPVehicle #976: [ 3.91139144e+02 -3.86687980e-04] 19.8072975439499
+llm_actions: [3, 3, 3]
+global_reward_llm: -2.4257756206406946
+---------------------------------------------------------------
+Step 49 (Parallel Actor-Reasoner Control Loop)
+[Actor Fast Retrieve] CAV 0 retrieved action: FASTER (raw: [3])
+[Safety Shield ACTIVE] CAV 0 action overridden from FASTER to SLOWER
+[Actor Fast Retrieve] CAV 1 retrieved action: FASTER (raw: [3])
+[Actor Fast Retrieve] CAV 2 retrieved action: FASTER (raw: [3])
+MDPVehicle #448: [238.00138251   0.        ] 19.7353844516146
+MDPVehicle #512: [192.36775963  10.5       ] 19.68183543366862
+MDPVehicle #976: [ 3.95105159e+02 -4.03508404e-04] 19.86393920432921
+llm_actions: [4, 3, 3]
+global_reward_llm: -12.361870909907006
+========== Reasoner Thread Stopped ==========
+Finished episode: 19
+{MDPVehicle #448: [241.83651469   0.        ]: {MDPVehicle #512: [196.31164814  10.5       ]: 56.42301283283376, IDMVehicle #48: [206.32398915   9.96884685]: 56.42301283283376}, MDPVehicle #512: [196.31164814  10.5       ]: {MDPVehicle #448: [241.83651469   0.        ]: 98.58168614280797, IDMVehicle #432: [246.11493992   0.        ]: 98.58168614280797}, MDPVehicle #976: [ 3.99081163e+02 -3.59227295e-04]: {}, IDMVehicle #432: [246.11493992   0.        ]: {MDPVehicle #512: [196.31164814  10.5       ]: 44.375550567993, IDMVehicle #48: [206.32398915   9.96884685]: 44.375550567993}, IDMVehicle #0: [ 3.07923560e+02 -1.45665838e-01]: {}, IDMVehicle #48: [206.32398915   9.96884685]: {MDPVehicle #448: [241.83651469   0.        ]: 84.64317513492614, IDMVehicle #432: [246.11493992   0.        ]: 84.64317513492614}}

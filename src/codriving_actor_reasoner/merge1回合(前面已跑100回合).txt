@@ -1,0 +1,2085 @@
+(codriving_yizhen) PS E:\YiZhen\CoDrivingLLM\CoDrivingLLM_Parallel_V2X> python Run_multi_CAV_Parallel.py
+E:\YiZhen\miniconda3\envs\codriving_yizhen\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+The number of CAV:3
+The number of CAV:3
+========== Reasoner Thread Started (1Hz Background loop) ==========
+==========Loaded  ./db/merge-multi-agent-v0  Memory, Now the database has  0  items.==========
+==========Loaded memory DB, now has 0 items.==========
+---------------------------------------------------------------
+Step 0 (Parallel Actor-Reasoner Control Loop)
+{MDPVehicle #864: [164.87161442  10.5       ]: {}, MDPVehicle #856: [84.7920957 10.5      ]: {}, IDMVehicle #432: [131.31738337   0.        ]: {}, IDMVehicle #576: [205.83516771  10.5       ]: {}, IDMVehicle #288: [ 5.64791155 10.5       ]: {}}
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [164.87161442  10.5       ] 15.62654703386455
+MDPVehicle #856: [84.7920957 10.5      ] 16.049096319145743
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.29792896465746066
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (1200, 120) to (1200, 128) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+---------------------------------------------------------------
+Step 1 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [167.98211223  10.5       ] 15.442384024055311
+MDPVehicle #856: [87.97711428 10.5       ] 15.740732022020294
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2921330121265717
+---------------------------------------------------------------
+Step 2 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [171.06013106  10.5       ] 15.31235264738589
+MDPVehicle #856: [91.10774974 10.5       ] 15.52300624683638
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2880406827957101
+---------------------------------------------------------------
+Step 3 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [174.11521755  10.5       ] 15.220541816665548
+MDPVehicle #856: [94.1999871 10.5      ] 15.369277317705027
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2851512251504003
+---------------------------------------------------------------
+Step 4 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [177.1541123  10.5      ] 15.15571724237077
+MDPVehicle #856: [97.26511283 10.5       ] 15.260734433281216
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2831110751993499
+---------------------------------------------------------------
+Step 5 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [180.18157458  10.5       ] 15.109946766278474
+MDPVehicle #856: [100.31109595  10.5       ] 15.18409591231049
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2816705931664927
+---------------------------------------------------------------
+Step 6 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [183.20096479  10.5       ] 15.077629755260569
+MDPVehicle #856: [103.34356309  10.5       ] 15.129984001356958
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2806535167080116
+---------------------------------------------------------------
+Step 7 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [186.21465557  10.5       ] 15.054811788520928
+MDPVehicle #856: [106.36648706  10.5       ] 15.091777380587732
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2799353928447485
+---------------------------------------------------------------
+Step 8 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [189.22432218  10.5       ] 15.038700781044312
+MDPVehicle #856: [109.38267292  10.5       ] 15.064800956268567
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2794283494669499
+---------------------------------------------------------------
+Step 9 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [192.23114744  10.5       ] 15.027325334455526
+MDPVehicle #856: [112.39410121  10.5       ] 15.045753800189432
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2790703430002084
+---------------------------------------------------------------
+Step 10 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [195.23596654  10.5       ] 15.019293509923001
+MDPVehicle #856: [115.40217035  10.5       ] 15.03230523671747
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2788175665399672
+---------------------------------------------------------------
+Step 11 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [198.23936914  10.5       ] 15.013622505728332
+MDPVehicle #856: [118.4078677  10.5      ] 15.022809653297667
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27863908948776867
+---------------------------------------------------------------
+Step 12 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [201.23829372  10.35799572] 15.009618398262372
+MDPVehicle #856: [121.41189041  10.5       ] 15.016105137631712
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27851307277667486
+---------------------------------------------------------------
+Step 13 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [204.23169595  10.13578054] 15.006791231141948
+MDPVehicle #856: [124.41473071  10.5       ] 15.011371302086511
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27842409656780504
+---------------------------------------------------------------
+Step 14 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [207.22014564   9.85971186] 15.004795062458973
+MDPVehicle #856: [127.41673615  10.5       ] 15.008028898237297
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27836127342573025
+---------------------------------------------------------------
+Step 15 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [210.2050209    9.55060534] 15.003385634136855
+MDPVehicle #856: [130.41815213  10.5       ] 15.005668938034928
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27831691609436854
+---------------------------------------------------------------
+Step 16 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [213.18775138   9.22366422] 15.0023904836708
+MDPVehicle #856: [133.4191519  10.5      ] 15.00400264861928
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782855968578491
+---------------------------------------------------------------
+Step 17 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [216.16946996   8.8891753 ] 15.001687841021614
+MDPVehicle #856: [136.41985781  10.5       ] 15.0028261370773
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27826348338650064
+---------------------------------------------------------------
+Step 18 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [219.15093195   8.55351117] 15.001191728414227
+MDPVehicle #856: [139.42035623  10.5       ] 15.001995441403777
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27824786979979094
+---------------------------------------------------------------
+Step 19 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [222.13256559   8.22016301] 15.00084143980096
+MDPVehicle #856: [142.42070814  10.5       ] 15.001408914814464
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27823684556546335
+---------------------------------------------------------------
+Step 20 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [225.114564     7.89065647] 15.00059411266039
+MDPVehicle #856: [145.42095662  10.5       ] 15.000994787895378
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782290617202285
+---------------------------------------------------------------
+Step 21 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [228.09697286   7.5652878 ] 15.000419483191589
+MDPVehicle #856: [148.42113206  10.5       ] 15.000702386650088
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.278223565805969
+---------------------------------------------------------------
+Step 22 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [231.07975766   7.24367032] 15.000296183131175
+MDPVehicle #856: [151.42125593  10.5       ] 15.000495931854935
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782196853236835
+---------------------------------------------------------------
+Step 23 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [234.06284871   6.92511013] 15.000209125059005
+MDPVehicle #856: [154.4213434  10.5      ] 15.000350160989973
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782169454441917
+---------------------------------------------------------------
+Step 24 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [237.04616838   6.60884321] 15.000147656249464
+MDPVehicle #856: [157.42140515  10.5       ] 15.000247237030004
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782150109064005
+---------------------------------------------------------------
+Step 25 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [240.02964558   6.29416893] 15.000104255167265
+MDPVehicle #856: [160.42144875  10.5       ] 15.00017456584473
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782136449936014
+---------------------------------------------------------------
+Step 26 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [243.01322219   5.98051166] 15.000073611106478
+MDPVehicle #856: [163.42147954  10.5       ] 15.000123255137572
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.278212680567999
+---------------------------------------------------------------
+Step 27 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [245.99685453   5.66743665] 15.00005197435426
+MDPVehicle #856: [166.42150128  10.5       ] 15.000087026353647
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782119996191543
+---------------------------------------------------------------
+Step 28 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [248.98051222   5.35463994] 15.000036697363077
+MDPVehicle #856: [169.42151663  10.5       ] 15.000061446414147
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782115188238207
+---------------------------------------------------------------
+Step 29 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [251.96417586   5.04192586] 15.000025910787654
+MDPVehicle #856: [172.42152746  10.5       ] 15.000043385269556
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782111793502251
+---------------------------------------------------------------
+Step 30 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [254.94783438   4.72918114] 15.00001829474547
+MDPVehicle #856: [175.42153511  10.5       ] 15.000030632896003
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782109396592089
+---------------------------------------------------------------
+Step 31 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [257.93148254   4.41635048] 15.000012917311363
+MDPVehicle #856: [178.42154052  10.5       ] 15.000021628869135
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782107704213535
+---------------------------------------------------------------
+Step 32 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [260.91511888   4.10341619] 15.000009120483973
+MDPVehicle #856: [181.42154433  10.5       ] 15.000015271425204
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821065092813196
+---------------------------------------------------------------
+Step 33 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [263.89874413   3.7903826 ] 15.000006439670422
+MDPVehicle #856: [184.42154702  10.5       ] 15.000010782645466
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821056655794224
+---------------------------------------------------------------
+Step 34 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [266.88236008   3.47726498] 15.000004546837127
+MDPVehicle #856: [187.42154893  10.5       ] 15.000007613267375
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782105069869571
+---------------------------------------------------------------
+Step 35 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [269.86596888   3.16408236] 15.000003210370487
+MDPVehicle #856: [190.42155027  10.5       ] 15.000005375474906
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782104649258655
+---------------------------------------------------------------
+Step 36 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [272.84957256   2.85085321] 15.000002266735837
+MDPVehicle #856: [193.42155122  10.5       ] 15.000003795444062
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782104352279276
+llm action: IDLE
+---------------------------------------------------------------
+Step 37 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: IDLE)
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [275.83317284   2.53759333] 15.000001600466792
+MDPVehicle #856: [196.42155189  10.5       ] 15.00000267983683
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821041425920123
+llm action: IDLE
+---------------------------------------------------------------
+Step 38 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: IDLE)
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [278.81677106   2.22431499] 15.000001130036376
+MDPVehicle #856: [199.42046947  10.44335703] 15.000001892143665
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103994538809
+llm action: IDLE
+---------------------------------------------------------------
+Step 39 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [281.8003682    1.91102707] 15.000000797881103
+MDPVehicle #856: [202.41501782  10.26393282] 15.000001335979716
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821038900033657
+---------------------------------------------------------------
+Step 40 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [284.78396489   1.59773544] 15.000000563357315
+MDPVehicle #856: [205.40491556  10.01840429] 15.000000943290848
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821038161943656
+---------------------------------------------------------------
+Step 41 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [287.76756152   1.2844437 ] 15.000000397767865
+MDPVehicle #856: [208.39095125   9.72943717] 15.000000666026297
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821037640802854
+---------------------------------------------------------------
+Step 42 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [290.75115831   0.97115371] 15.00000028085066
+MDPVehicle #856: [211.37437658   9.41456254] 15.00000047025902
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821037272842664
+---------------------------------------------------------------
+Step 43 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [293.73475535   0.65786625] 15.000000198299311
+MDPVehicle #856: [214.35636649   9.08633868] 15.000000332034254
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821037013038213
+---------------------------------------------------------------
+Step 44 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [296.71835264   0.34458138] 15.000000140012549
+MDPVehicle #856: [217.33779927   8.75308418] 15.000000234438344
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103682959892
+---------------------------------------------------------------
+Step 45 (Parallel Actor-Reasoner Control Loop)
+{MDPVehicle #864: [2.99706931e+02 8.99153717e-02]: {}, MDPVehicle #856: [220.31923015   8.41981259]: {IDMVehicle #432: [255.86130983   0.        ]: 73.56255726829711}, IDMVehicle #432: [255.86130983   0.        ]: {MDPVehicle #856: [220.31923015   8.41981259]: 36.171678152010514}, IDMVehicle #576: [3.44378349e+02 3.32198928e-03]: {}, IDMVehicle #288: [124.3736248  10.5      ]: {}}
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [2.99706931e+02 8.99153717e-02] 15.000000098858203
+MDPVehicle #856: [220.31923015   8.41981259] 15.000000165529118
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036700078544
+---------------------------------------------------------------
+Step 46 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.02704080e+02 -3.89238196e-02] 15.00000006980049
+MDPVehicle #856: [223.30095157   8.08915172] 15.000000116874604
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103660862852
+---------------------------------------------------------------
+Step 47 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.05703394e+02 -1.01299098e-01] 15.000000049283805
+MDPVehicle #856: [226.28307493   7.76213603] 15.000000082521272
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103654405869
+---------------------------------------------------------------
+Step 48 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.08703317e+02 -1.20689229e-01] 15.000000034797656
+MDPVehicle #856: [229.26560275   7.43882985] 15.000000058265526
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103649846808
+llm action: IDLE
+---------------------------------------------------------------
+Step 49 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.11703308e+02 -1.15026168e-01] 15.000000024569468
+MDPVehicle #856: [232.2484819    7.11878085] 15.000000041139348
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103646627807
+---------------------------------------------------------------
+Step 50 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.14703253e+02 -9.69846521e-02] 15.000000017347684
+MDPVehicle #856: [235.23163821   6.80132525] 15.000000029047126
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036443549774
+---------------------------------------------------------------
+Step 51 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.17703171e+02 -7.48248836e-02] 15.000000012248622
+MDPVehicle #856: [238.21499676   6.4857755 ] 15.00000002050921
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103642750208
+llm action: IDLE
+---------------------------------------------------------------
+Step 52 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.20703094e+02 -5.34126210e-02] 15.000000008648344
+MDPVehicle #856: [241.1984921   6.1715217] 15.000000014480872
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036416171335
+---------------------------------------------------------------
+Step 53 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.23703039e+02 -3.51982021e-02] 15.000000006106308
+MDPVehicle #856: [244.18207231   5.85807455] 15.000000010224461
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103640817108
+---------------------------------------------------------------
+Step 54 (Parallel Actor-Reasoner Control Loop)
+llm action: IDLE
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.26703005e+02 -2.10458032e-02] 15.000000004311461
+MDPVehicle #856: [247.16569921   5.54507206] 15.000000007219153
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036402522364
+---------------------------------------------------------------
+Step 55 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.29702988e+02 -1.08756247e-02] 15.00000000304418
+MDPVehicle #856: [250.14934674   5.23226637] 15.000000005097204
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036398533994
+---------------------------------------------------------------
+Step 56 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.32702980e+02 -4.12394549e-03] 15.000000002149395
+MDPVehicle #856: [253.13299859   4.91950187] 15.000000003598966
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036395717935
+---------------------------------------------------------------
+Step 57 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.35702977e+02 -4.74909078e-05] 15.000000001517616
+MDPVehicle #856: [256.11664565   4.60669167] 15.00000000254111
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103639372961
+---------------------------------------------------------------
+Step 58 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.38702976e+02 2.09363088e-03] 15.00000000107154
+MDPVehicle #856: [259.10028378   4.29379624] 15.000000001794193
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036392325715
+---------------------------------------------------------------
+Step 59 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.41702976e+02 2.94056581e-03] 15.000000000756575
+MDPVehicle #856: [262.08391196   3.98080607] 15.000000001266821
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036391334475
+---------------------------------------------------------------
+Step 60 (Parallel Actor-Reasoner Control Loop)
+{MDPVehicle #864: [3.44702976e+02 2.99871341e-03]: {}, MDPVehicle #856: [265.06753099   3.66772858]: {IDMVehicle #432: [287.00063739   0.        ]: 31.56270052864282}, IDMVehicle #432: [287.00063739   0.        ]: {MDPVehicle #856: [265.06753099   3.66772858]: 6.1499848165909725}, IDMVehicle #576: [ 3.90755812e+02 -4.12476031e-05]: {}, IDMVehicle #288: [170.41464946  10.5       ]: {}}
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.44702976e+02 2.99871341e-03] 15.000000000534193
+MDPVehicle #856: [265.06753099   3.66772858] 15.00000000089446
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036390634596
+---------------------------------------------------------------
+Step 61 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.47702976e+02 2.63614075e-03] 15.000000000377176
+MDPVehicle #856: [268.05114246   3.35457912] 15.000000000631548
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036390140436
+---------------------------------------------------------------
+Step 62 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.50702976e+02 2.10075136e-03] 15.000000000266311
+MDPVehicle #856: [271.03474821   3.04137513] 15.000000000445915
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103638979152
+---------------------------------------------------------------
+Step 63 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.53702976e+02 1.54502602e-03] 15.000000000188034
+MDPVehicle #856: [274.01834995   2.72813292] 15.000000000314845
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103638954517
+llm action: IDLE
+---------------------------------------------------------------
+Step 64 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.56702976e+02 1.05148642e-03] 15.000000000132765
+MDPVehicle #856: [277.00194909   2.41486603] 15.000000000222302
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036389371223
+llm action: IDLE
+---------------------------------------------------------------
+Step 65 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.59702976e+02 6.55199973e-04] 15.000000000093742
+MDPVehicle #856: [279.98554673   2.10158479] 15.000000000156959
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036389248405
+---------------------------------------------------------------
+Step 66 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+llm action: IDLE
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.62702976e+02 3.61785548e-04] 15.000000000066189
+MDPVehicle #856: [282.96914362   1.78829648] 15.000000000110823
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103638916169
+---------------------------------------------------------------
+Step 67 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.65702976e+02 1.60702930e-04] 15.000000000046734
+MDPVehicle #856: [285.95274028   1.47500585] 15.000000000078249
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782103638910047
+---------------------------------------------------------------
+Step 68 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [3.68702976e+02 3.43306214e-05] 15.000000000032998
+MDPVehicle #856: [288.93633698   1.16171568] 15.000000000055248
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036389057235
+---------------------------------------------------------------
+Step 69 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.71702976e+02 -3.63518882e-05] 15.000000000023299
+MDPVehicle #856: [291.91993387   0.84842738] 15.000000000039009
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036389026704
+{MDPVehicle #864: [ 3.74702976e+02 -6.86048771e-05]: {}, MDPVehicle #856: [294.90353102   0.53514144]: {}, IDMVehicle #432: [314.04942981   0.        ]: {}, IDMVehicle #576: [4.21674121e+02 1.65658128e-06]: {}, IDMVehicle #288: [202.33026456  10.26260081]: {}}
+---------------------------------------------------------------
+Step 70 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.74702976e+02 -6.86048771e-05] 15.00000000001645
+MDPVehicle #856: [294.90353102   0.53514144] 15.00000000002754
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821036389005166
+---------------------------------------------------------------
+Step 71 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.77702976e+02 -7.65045510e-05] 15.000000000011617
+MDPVehicle #856: [2.97887128e+02 2.21857800e-01] 15.000000000019446
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.267228181340168
+---------------------------------------------------------------
+Step 72 (Parallel Actor-Reasoner Control Loop)
+llm action: IDLE
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.80702976e+02 -7.06146789e-05] 15.000000000008201
+MDPVehicle #856: [3.00881732e+02 4.38679506e-02] 15.00000000001373
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.21295603459692036
+---------------------------------------------------------------
+Step 73 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+llm action: IDLE
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.83702976e+02 -5.82749792e-05] 15.000000000005791
+MDPVehicle #856: [ 3.03880042e+02 -5.51045159e-02] 15.000000000009695
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.1540762143079056
+---------------------------------------------------------------
+Step 74 (Parallel Actor-Reasoner Control Loop)
+llm action: SLOWER
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.86702976e+02 -4.41747117e-05] 15.00000000000409
+MDPVehicle #856: [ 3.06879685e+02 -9.97162233e-02] 15.000000000006846
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.09066978118282899
+---------------------------------------------------------------
+Step 75 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: SLOWER (raw: [4])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.89702976e+02 -3.10004566e-05] 15.000000000002887
+MDPVehicle #856: [ 3.09879659e+02 -1.10010759e-01] 15.000000000004835
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.1462477471507654
+---------------------------------------------------------------
+Step 76 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: SLOWER (raw: [4])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.92702976e+02 -2.00378469e-05] 15.00000000000204
+MDPVehicle #856: [ 3.12761438e+02 -1.00126064e-01] 13.530333719139216
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.1982345806561742
+{MDPVehicle #864: [ 3.95702976e+02 -1.16703182e-05]: {}, MDPVehicle #856: [ 3.15383978e+02 -8.10779256e-02]: {}, IDMVehicle #432: [329.95190238   0.        ]: {}, IDMVehicle #576: [ 4.43316937e+02 -3.29976102e-08]: {}, IDMVehicle #288: [223.25565761   8.09428599]: {}}
+---------------------------------------------------------------
+Step 77 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: SLOWER (raw: [4])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.95702976e+02 -1.16703182e-05] 15.000000000001439
+MDPVehicle #856: [ 3.15383978e+02 -8.10779256e-02] 12.492651233695854
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.1997155615430206
+---------------------------------------------------------------
+Step 78 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: SLOWER (raw: [4])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 3.98702976e+02 -5.75855777e-06] 15.000000000001014
+MDPVehicle #856: [ 3.17705295e+02 -6.10286465e-02] 10.290311859208188
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055621244
+---------------------------------------------------------------
+Step 79 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: SLOWER (raw: [4])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.01702976e+02 -1.90774115e-06] 15.000000000000714
+MDPVehicle #856: [ 3.19638218e+02 -4.39127102e-02] 8.735313268261336
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055620895
+llm action: IDLE
+---------------------------------------------------------------
+Step 80 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: SLOWER (raw: [4])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.04702976e+02 3.59023832e-07] 15.000000000000503
+MDPVehicle #856: [ 3.21296926e+02 -3.08281616e-02] 7.637380476495672
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055620642
+llm action: IDLE
+---------------------------------------------------------------
+Step 81 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: SLOWER (raw: [4])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.07702976e+02 1.49910560e-06] 15.000000000000353
+MDPVehicle #856: [ 3.22762025e+02 -2.14665733e-02] 6.862166645272624
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055620473
+---------------------------------------------------------------
+Step 82 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: SLOWER (raw: [4])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.10702976e+02 1.89970288e-06] 15.000000000000249
+MDPVehicle #856: [ 3.2397222e+02 -1.5206305e-02] 4.845147658826991
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055620345
+llm action: IDLE
+---------------------------------------------------------------
+Step 83 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.13702976e+02 1.86051745e-06] 15.000000000000174
+MDPVehicle #856: [ 3.24826700e+02 -1.10440948e-02] 3.420997630829763
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620256
+---------------------------------------------------------------
+Step 84 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.16702976e+02 1.59614737e-06] 15.000000000000123
+MDPVehicle #856: [ 3.25430019e+02 -8.01973761e-03] 2.4154526578404014
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620198
+---------------------------------------------------------------
+Step 85 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+{MDPVehicle #864: [4.19702976e+02 1.24849446e-06]: {}, MDPVehicle #856: [ 3.25856002e+02 -5.75322771e-03]: {}, IDMVehicle #432: [348.45678491   0.        ]: {}, IDMVehicle #576: [ 4.68051584e+02 -9.10611387e-09]: {}, IDMVehicle #288: [247.9450461    5.46293461]: {}}
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.19702976e+02 1.24849446e-06] 15.000000000000087
+MDPVehicle #856: [ 3.25856002e+02 -5.75322771e-03] 1.7054707929900328
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620162
+---------------------------------------------------------------
+Step 86 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.22702976e+02 9.02790161e-07] 15.000000000000062
+MDPVehicle #856: [ 3.26156774e+02 -4.08288301e-03] 1.2041762094987976
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.1948770305562013
+---------------------------------------------------------------
+Step 87 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.25702976e+02 6.03416000e-07] 15.000000000000044
+MDPVehicle #856: [ 3.26369139e+02 -2.88486501e-03] 0.8502287752349487
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620106
+---------------------------------------------------------------
+Step 88 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.28702976e+02 3.67542967e-07] 15.00000000000003
+MDPVehicle #856: [ 3.26519083e+02 -2.03695924e-03] 0.6003182628382949
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620095
+llm action: FASTER
+---------------------------------------------------------------
+Step 89 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.31702976e+02 1.95841001e-07] 15.000000000000023
+MDPVehicle #856: [ 3.26624954e+02 -1.43822923e-03] 0.4238647611022124
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.1948770305562008
+---------------------------------------------------------------
+Step 90 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.34702976e+02 8.02503996e-08] 15.000000000000016
+MDPVehicle #856: [ 3.26699705e+02 -1.01548583e-03] 0.2992768116945164
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 91 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+llm action: IDLE
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.37702976e+02 9.19596250e-09] 15.00000000000001
+MDPVehicle #856: [ 3.26752485e+02 -7.17000771e-04] 0.21130940393612146
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 92 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.40702976e+02 -2.92215240e-08] 15.00000000000001
+MDPVehicle #856: [ 3.26789751e+02 -5.06250399e-04] 0.14919854277723546
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 93 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.43702976e+02 -4.55113997e-08] 15.00000000000001
+MDPVehicle #856: [ 3.26816063e+02 -3.57446572e-04] 0.10534412928247995
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 94 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.46702976e+02 -4.80777028e-08] 15.00000000000001
+MDPVehicle #856: [ 3.26834641e+02 -2.52381399e-04] 0.07437998634378806
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 95 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.49702976e+02 -4.31204239e-08] 15.00000000000001
+MDPVehicle #856: [ 3.26847759e+02 -1.78863226e-04] 0.052517234763667105
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+{MDPVehicle #864: [ 4.52702976e+02 -3.48726621e-08]: {}, MDPVehicle #856: [ 3.26856354e+02 -6.50394784e-04]: {}, IDMVehicle #432: [379.80667145   0.        ]: {}, IDMVehicle #576: [5.02061724e+02 2.89296927e-10]: {}, IDMVehicle #288: [282.79106708   1.80702194]: {}}
+---------------------------------------------------------------
+Step 96 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.52702976e+02 -3.48726621e-08] 15.00000000000001
+MDPVehicle #856: [ 3.26856354e+02 -6.50394784e-04] 0.03708067294438899
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 97 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.55702976e+02 -2.59826177e-08] 15.00000000000001
+MDPVehicle #856: [ 3.26861297e+02 -4.36174944e-04] 0.02618143000476462
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 98 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.58702976e+02 -1.79213716e-08] 15.00000000000001
+MDPVehicle #856: [ 3.26864787e+02 -2.84902500e-04] 0.018485837032202874
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 99 (Parallel Actor-Reasoner Control Loop)
+llm action: IDLE
+[Actor Fallback] CAV 1761432977904 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.61702976e+02 -1.13507234e-08] 15.00000000000001
+MDPVehicle #856: [ 3.26867251e+02 -1.78084616e-04] 0.013052234760247024
+llm_actions: [3, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 100 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.64702976e+02 -6.42190223e-09] 15.00000000000001
+MDPVehicle #856: [ 3.26868991e+02 -1.02659354e-04] 0.009215748896835296
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 101 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.67702976e+02 -2.99892387e-09] 15.00000000000001
+MDPVehicle #856: [ 3.26870219e+02 -4.94017389e-05] 0.0065069338155172435
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 102 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 4.70702976e+02 -8.13208245e-10] 15.00000000000001
+MDPVehicle #856: [ 3.26871087e+02 -4.16521604e-05] 0.004594329571421102
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 103 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.73702976e+02 4.38064952e-10] 15.00000000000001
+MDPVehicle #856: [ 3.26871699e+02 -3.61815350e-05] 0.0032439033205621313
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 104 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.76702976e+02 1.03595973e-09] 15.00000000000001
+MDPVehicle #856: [ 3.26872166e+02 -8.21397477e-05] 0.0022904122548394173
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 105 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.79702976e+02 1.21330788e-09] 15.00000000000001
+MDPVehicle #856: [ 3.26872471e+02 -6.89165891e-05] 0.001617183922796292
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 106 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+llm action: IDLE
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.82702976e+02 1.14716607e-09] 15.00000000000001
+MDPVehicle #856: [ 3.26872687e+02 -5.95800844e-05] 0.001141839786538412
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 107 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.85702976e+02 9.62173698e-10] 15.00000000000001
+MDPVehicle #856: [ 3.26872839e+02 -5.29878528e-05] 0.0008062151000534765
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 108 (Parallel Actor-Reasoner Control Loop)
+{MDPVehicle #864: [4.88702976e+02 7.39183683e-10]: {}, MDPVehicle #856: [ 3.26872947e+02 -4.83332794e-05]: {}, IDMVehicle #432: [417.13455104   0.        ]: {}, IDMVehicle #576: [ 5.39163695e+02 -4.85269252e-12]: {}, IDMVehicle #288: [ 3.16317361e+02 -4.67264846e-02]: {}}
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.88702976e+02 7.39183683e-10] 15.00000000000001
+MDPVehicle #856: [ 3.26872947e+02 -4.83332794e-05] 0.0005692416705190466
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 109 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.91702976e+02 5.25519764e-10] 15.00000000000001
+MDPVehicle #856: [ 3.26873026e+02 -3.94239122e-05] 0.0004019226127541165
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 110 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.94702976e+02 3.44743926e-10] 15.00000000000001
+MDPVehicle #856: [ 3.26873079e+02 -3.71033357e-05] 0.0002837841904578038
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 111 (Parallel Actor-Reasoner Control Loop)
+llm action: IDLE
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [4.97702976e+02 2.04885191e-10] 15.00000000000001
+MDPVehicle #856: [ 3.26873128e+02 -3.39357663e-05] 0.00020037057930616826
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 112 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.00702976e+02 1.04786110e-10] 15.00000000000001
+MDPVehicle #856: [ 3.26873163e+02 -3.38765800e-05] 0.00014147500248946803
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 113 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.03702976e+02 3.86288925e-11] 15.00000000000001
+MDPVehicle #856: [ 3.26873188e+02 -3.38762453e-05] 9.989079434067811e-05
+llm action: IDLE
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 114 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.06702976e+02 -1.08156391e-12] 15.00000000000001
+MDPVehicle #856: [ 3.26873205e+02 -3.38760072e-05] 7.052956789843114e-05
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 115 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+{MDPVehicle #864: [ 5.09702976e+02 -2.17367629e-11]: {}, MDPVehicle #856: [ 3.26873218e+02 -3.38758391e-05]: {}, IDMVehicle #432: [439.27402901   0.        ]: {}, IDMVehicle #576: [5.60806511e+02 8.77155314e-13]: {}, IDMVehicle #288: [3.22188376e+02 3.18819981e-03]: {}}
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+[Safety Shield ACTIVE] CAV 1 action overridden from IDLE to SLOWER
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.09702976e+02 -2.17367629e-11] 15.00000000000001
+MDPVehicle #856: [ 3.26873218e+02 -3.38758391e-05] 4.9798582349581894e-05
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 116 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+[Safety Shield ACTIVE] CAV 1 action overridden from IDLE to SLOWER
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.12702976e+02 -2.97051936e-11] 15.00000000000001
+MDPVehicle #856: [ 3.26873227e+02 -3.38757203e-05] 3.5161122886777994e-05
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 117 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+[Safety Shield ACTIVE] CAV 1 action overridden from IDLE to SLOWER
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.15702976e+02 -2.99852327e-11] 15.00000000000001
+MDPVehicle #856: [ 3.26873233e+02 -3.38756365e-05] 2.482609954597399e-05
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 118 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+[Safety Shield ACTIVE] CAV 1 action overridden from IDLE to SLOWER
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.18702976e+02 -2.62019249e-11] 15.00000000000001
+MDPVehicle #856: [ 3.26873237e+02 -3.38755773e-05] 1.75288832683548e-05
+llm_actions: [1, 1, 4]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 119 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.21702976e+02 -2.07863395e-11] 15.00000000000001
+MDPVehicle #856: [ 3.26873240e+02 -3.38755356e-05] 1.237656153221367e-05
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 120 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.24702976e+02 -1.52257450e-11] 15.00000000000001
+MDPVehicle #856: [ 3.26873242e+02 -3.38755060e-05] 8.738678500826599e-06
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 121 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.27702976e+02 -1.03179895e-11] 15.00000000000001
+MDPVehicle #856: [ 3.26873244e+02 -3.38754852e-05] 6.170090274431048e-06
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 122 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.30702976e+02 -6.39533485e-12] 15.00000000000001
+MDPVehicle #856: [ 3.26873245e+02 -3.38754705e-05] 4.356495549187162e-06
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 123 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.33702976e+02 -3.50285614e-12] 15.00000000000001
+MDPVehicle #856: [ 3.26873246e+02 -3.38754601e-05] 3.0759766269120965e-06
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 124 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.36702976e+02 -1.52889270e-12] 15.00000000000001
+MDPVehicle #856: [ 3.26873246e+02 -3.38754528e-05] 2.1718448010522762e-06
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 125 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.39702976e+02 -2.94643105e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873247e+02 -3.38754476e-05] 1.5334673867769277e-06
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 126 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.42702976e+02 3.90393039e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873247e+02 -3.38754440e-05] 1.0827303245467302e-06
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 127 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.45702976e+02 6.98008866e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873247e+02 -3.38754414e-05] 7.644798746956346e-07
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 128 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.48702976e+02 7.67551243e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873247e+02 -3.38754395e-05] 5.397738158477423e-07
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+{MDPVehicle #864: [5.51702976e+02 7.03339501e-13]: {}, MDPVehicle #856: [ 3.26873248e+02 -3.38754383e-05]: {}, IDMVehicle #432: [483.71049524   0.        ]: {}, IDMVehicle #576: [ 6.04092143e+02 -8.49695018e-15]: {}, IDMVehicle #288: [3.14181323e+02 2.00261991e-01]: {}}
+---------------------------------------------------------------
+Step 129 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.51702976e+02 7.03339501e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873248e+02 -3.38754383e-05] 3.8111634055877675e-07
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 130 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.54702976e+02 5.77524259e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873248e+02 -3.38754374e-05] 2.6909357359765864e-07
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 131 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.57702976e+02 4.36152017e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873248e+02 -3.38754367e-05] 1.899980232949132e-07
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 132 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.60702976e+02 3.04827294e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873248e+02 -3.38754363e-05] 1.3415128564143634e-07
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 133 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.63702976e+02 1.96109486e-13] 15.00000000000001
+llm action: IDLE
+MDPVehicle #856: [ 3.26873248e+02 -3.38754359e-05] 9.471976143307627e-08
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 134 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+llm action: FASTER
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.66702976e+02 1.13440287e-13] 15.00000000000001
+MDPVehicle #856: [ 3.26873248e+02 -3.38754357e-05] 6.687847353113761e-08
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 135 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: FASTER (raw: [3])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.69702976e+02 5.52098713e-14] 15.00000000000001
+MDPVehicle #856: [ 3.26873248e+02 -3.38754356e-05] 4.7220666038261275e-08
+llm_actions: [1, 1, 3]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 136 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+{MDPVehicle #864: [5.72702976e+02 1.74908263e-14]: {}, MDPVehicle #856: [ 3.26991383e+02 -2.27117441e-03]: {}, IDMVehicle #432: [505.94810615   0.        ]: {}, IDMVehicle #576: [6.25734960e+02 1.51258813e-15]: {}, IDMVehicle #288: [311.61298443   1.01601582]: {}}
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: FASTER (raw: [3])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [5.72702976e+02 1.74908263e-14] 15.00000000000001
+MDPVehicle #856: [ 3.26991383e+02 -2.27117441e-03] 1.4696663142051396
+llm_actions: [1, 1, 3]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 137 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: FASTER (raw: [3])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.75702976e+02 -4.65734072e-15] 15.00000000000001
+MDPVehicle #856: [ 3.27368772e+02 -2.99881154e-03] 2.507348789847485
+llm_actions: [1, 1, 3]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 138 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: FASTER (raw: [3])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.78702976e+02 -1.55506219e-14] 15.00000000000001
+MDPVehicle #856: [ 3.28047368e+02 -2.97211818e-03] 4.7096881574149805
+llm action: IDLE
+llm_actions: [1, 1, 3]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 139 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: FASTER (raw: [3])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.81702976e+02 -1.93801090e-14] 15.00000000000001
+MDPVehicle #856: [ 3.29114369e+02 -2.34435207e-03] 6.264686743475729
+llm_actions: [1, 1, 3]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 140 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: FASTER (raw: [3])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.84702976e+02 -1.89213597e-14] 15.00000000000001
+MDPVehicle #856: [ 3.30455609e+02 -1.55757240e-03] 7.3626195317914815
+llm_actions: [1, 1, 3]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 141 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.87702976e+02 -1.61450198e-14] 15.00000000000001
+MDPVehicle #856: [ 3.31990481e+02 -8.76268486e-04] 8.137833360578659
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 142 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.90702976e+02 -1.25498905e-14] 15.00000000000001
+{MDPVehicle #864: [ 5.90702976e+02 -1.25498905e-14]: {}, MDPVehicle #856: [ 3.33662069e+02 -3.81625549e-04]: {}, IDMVehicle #432: [525.01113078   0.        ]: {}, IDMVehicle #576: [6.44285945e+02 1.69534373e-15]: {}, IDMVehicle #288: [3.10630694e+02 9.44303672e-02]: {}}
+MDPVehicle #856: [ 3.33662069e+02 -3.81625549e-04] 8.68518606444021
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 143 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.93702976e+02 -9.07966123e-15] 15.00000000000001
+MDPVehicle #856: [ 3.35430189e+02 -6.67529979e-05] 9.071653605780725
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 144 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.96702976e+02 -6.02576561e-15] 15.00000000000001
+MDPVehicle #856: [3.37266465e+02 1.07283460e-04] 9.344525484289912
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 145 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 5.99702976e+02 -3.79065947e-15] 15.00000000000001
+MDPVehicle #856: [3.39150866e+02 1.84086281e-04] 9.537191243030893
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 146 (Parallel Actor-Reasoner Control Loop)
+llm action: IDLE
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 6.02702976e+02 -2.22168715e-15] 15.00000000000001
+MDPVehicle #856: [3.41069245e+02 2.00680637e-04] 9.673226127952127
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 147 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 6.05702976e+02 -1.31884864e-15] 15.00000000000001
+MDPVehicle #856: [3.43011615e+02 1.84433410e-04] 9.769275836195364
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 148 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 6.08702976e+02 -4.99276858e-16] 15.00000000000001
+MDPVehicle #856: [3.44970925e+02 1.53638366e-04] 9.837093340940216
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 149 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 6.11702976e+02 -2.66497716e-17] 15.00000000000001
+MDPVehicle #856: [3.46942194e+02 1.19408698e-04] 9.884977025689897
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 150 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.14702976e+02 3.76588376e-16] 15.00000000000001
+MDPVehicle #856: [3.48921909e+02 8.77434776e-05] 9.918786103063551
+{MDPVehicle #864: [6.16202976e+02 5.64329662e-16]: {}, MDPVehicle #856: [3.49914126e+02 7.37933193e-05]: {}, IDMVehicle #432: [552.01826412   0.        ]: {}, IDMVehicle #576: [6.70566507e+02 8.13557219e-16]: {}, IDMVehicle #288: [ 3.11528006e+02 -2.45994198e-01]: {}}
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 151 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.17702976e+02 7.52070948e-16] 15.00000000000001
+MDPVehicle #856: [3.50907586e+02 6.12980215e-05] 9.942657568236566
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 152 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.20702976e+02 9.47142278e-16] 15.00000000000001
+MDPVehicle #856: [3.52897473e+02 4.07244397e-05] 9.95951241592166
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: IDLE
+---------------------------------------------------------------
+Step 153 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.23702976e+02 1.15609140e-15] 15.00000000000001
+MDPVehicle #856: [3.54890333e+02 2.56025890e-05] 9.971413063344377
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 154 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.26702976e+02 1.36504051e-15] 15.00000000000001
+MDPVehicle #856: [3.56885291e+02 1.50392036e-05] 9.979815714719571
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 155 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.29702976e+02 1.35194503e-15] 15.00000000000001
+MDPVehicle #856: [3.58881732e+02 8.02310823e-06] 9.985748547415568
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+---------------------------------------------------------------
+Step 156 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.32702976e+02 1.39436069e-15] 15.00000000000001
+MDPVehicle #856: [3.60879218e+02 3.61403406e-06] 9.989937523278904
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19487703055620073
+llm action: FASTER
+---------------------------------------------------------------
+Step 157 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.35702976e+02 1.43677636e-15] 15.00000000000001
+MDPVehicle #856: [3.62877444e+02 1.02557772e-06] 9.9928952198267
+llm_actions: [1, 3, 1]
+global_reward_llm: 0.21937146857060394
+---------------------------------------------------------------
+Step 158 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.38821176e+02 1.48086320e-15] 16.469666280864203
+MDPVehicle #856: [ 3.64876191e+02 -3.54108686e-07] 9.994983550997429
+llm_actions: [1, 3, 1]
+global_reward_llm: 0.23666617666130987
+llm action: IDLE
+---------------------------------------------------------------
+Step 159 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.42198567e+02 1.52861462e-15] 17.50734876630656
+MDPVehicle #856: [ 3.66875306e+02 -9.74538074e-07] 9.99645805218718
+llm_actions: [1, 3, 1]
+global_reward_llm: 0.24887739488835584
+---------------------------------------------------------------
+Step 160 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.45758963e+02 1.57895348e-15] 18.240021859929318
+MDPVehicle #856: [ 3.68874681e+02 -1.14950051e-06] 9.997499148440998
+llm_actions: [1, 3, 1]
+global_reward_llm: 0.2574993299800891
+{MDPVehicle #864: [6.49448573e+02 1.63111924e-15]: {}, MDPVehicle #856: [ 3.70874240e+02 -1.08723811e-06]: {}, IDMVehicle #432: [585.38058639   0.        ]: {}, IDMVehicle #576: [ 7.03030732e+02 -2.75708467e-16]: {}, IDMVehicle #288: [ 3.18899675e+02 -6.25671352e-02]: {}}
+---------------------------------------------------------------
+Step 161 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.49448573e+02 1.63111924e-15] 18.75733796543331
+MDPVehicle #856: [ 3.70874240e+02 -1.08723811e-06] 9.99823423188294
+llm_actions: [1, 3, 1]
+global_reward_llm: 0.26358699161579824
+---------------------------------------------------------------
+Step 162 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.53229417e+02 1.68457491e-15] 19.12259766357586
+MDPVehicle #856: [ 3.72873929e+02 -9.18485924e-07] 9.998753249855234
+llm_actions: [1, 3, 1]
+global_reward_llm: 0.267885287044445
+llm action: IDLE
+---------------------------------------------------------------
+Step 163 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: FASTER (raw: [3])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.57074679e+02 1.73894135e-15] 19.380495389294666
+MDPVehicle #856: [ 3.74873709e+02 -7.19899317e-07] 9.99911971118492
+llm_actions: [1, 3, 1]
+global_reward_llm: 0.27092017050175676
+---------------------------------------------------------------
+Step 164 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: FASTER (raw: [3])
+llm action: IDLE
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.60965423e+02 1.79395085e-15] 19.56258839673337
+MDPVehicle #856: [ 3.76873554e+02 -5.32261652e-07] 9.99937845734271
+llm_actions: [1, 3, 1]
+global_reward_llm: 0.27306300078235585
+---------------------------------------------------------------
+Step 165 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.64888281e+02 1.84941439e-15] 19.691158213569317
+MDPVehicle #856: [ 3.78873444e+02 -3.73847510e-07] 9.999561149399819
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27457598198115263
+---------------------------------------------------------------
+Step 166 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+llm action: IDLE
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.68833814e+02 1.90519852e-15] 19.781937085497123
+MDPVehicle #856: [ 3.80873367e+02 -2.49742112e-07] 9.999690142185704
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27564424768965884
+---------------------------------------------------------------
+Step 167 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.72795356e+02 1.96120901e-15] 19.846033028007497
+MDPVehicle #856: [ 3.82873312e+02 -1.58020077e-07] 9.99978121970201
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.276398514580006
+---------------------------------------------------------------
+Step 168 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+{MDPVehicle #864: [6.76768203e+02 2.01737932e-15]: {}, MDPVehicle #856: [ 3.84873273e+02 -9.36204122e-08]: {}, IDMVehicle #432: [607.6222251   0.       ]: {}, IDMVehicle #576: [ 7.24673548e+02 -1.00188559e-15]: {}, IDMVehicle #288: [ 3.27241235e+02 -6.34691925e-03]: {}}
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.76768203e+02 2.01737932e-15] 19.891289041428326
+MDPVehicle #856: [ 3.84873273e+02 -9.36204122e-08] 9.999845526507386
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27693107734725003
+---------------------------------------------------------------
+Step 169 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.80749030e+02 2.07366247e-15] 19.92324280746297
+MDPVehicle #856: [ 3.86873246e+02 -5.06156656e-08] 9.999890931404062
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27730710220620164
+---------------------------------------------------------------
+Step 170 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.84735493e+02 2.13002529e-15] 19.945804299000066
+MDPVehicle #856: [ 3.88873227e+02 -2.34169257e-08] 9.999922990291614
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2775726008539597
+---------------------------------------------------------------
+Step 171 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.88725935e+02 2.18644438e-15] 19.961734217865548
+MDPVehicle #856: [ 3.90873213e+02 -7.31177383e-09] 9.999945626005957
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27776006061967273
+---------------------------------------------------------------
+Step 172 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.92719187e+02 2.24290318e-15] 19.97298180380833
+MDPVehicle #856: [3.92873204e+02 1.38812644e-09] 9.999961608331075
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2778924197260483
+---------------------------------------------------------------
+Step 173 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [6.96714422e+02 2.29939003e-15] 19.980923350190864
+MDPVehicle #856: [3.94873197e+02 5.40654175e-09] 9.999972892919331
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2779858740893028
+---------------------------------------------------------------
+Step 174 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.00711058e+02 2.35589668e-15] 19.986530611986133
+MDPVehicle #856: [3.96873192e+02 6.65446633e-09] 9.999980860591817
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27805185910726227
+llm action: IDLE
+---------------------------------------------------------------
+Step 175 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.04708682e+02 2.41241732e-15] 19.990489713063702
+MDPVehicle #856: [3.98873189e+02 6.40705170e-09] 9.999986486300386
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2780984489340343
+---------------------------------------------------------------
+Step 176 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+llm action: IDLE
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.08707005e+02 2.46894782e-15] 19.993285102670026
+MDPVehicle #856: [4.00873186e+02 5.47007830e-09] 9.999990458426117
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2781313444613187
+---------------------------------------------------------------
+Step 177 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+llm action: IDLE
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.12705821e+02 2.33121063e-15] 19.99525883430709
+MDPVehicle #856: [4.02873185e+02 4.32013757e-09] 9.999993263011998
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2781545708991549
+---------------------------------------------------------------
+Step 178 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.16704985e+02 2.16575483e-15] 19.996652420577263
+MDPVehicle #856: [4.04873184e+02 3.21424591e-09] 9.999995243236818
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2781709703144887
+---------------------------------------------------------------
+Step 179 (Parallel Actor-Reasoner Control Loop)
+{MDPVehicle #864: [7.20704394e+02 2.00028887e-15]: {}, MDPVehicle #856: [4.06873183e+02 2.27072918e-09]: {}, IDMVehicle #432: [642.57340546   0.        ]: {}, IDMVehicle #576: [ 7.58683688e+02 -1.40353437e-15]: {}, IDMVehicle #288: [3.44393694e+02 8.46455582e-05]: {}}
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.20704394e+02 2.00028887e-15] 19.997636385497287
+MDPVehicle #856: [4.06873183e+02 2.27072918e-09] 9.999996641407709
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.278182549396274
+---------------------------------------------------------------
+Step 180 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.24703977e+02 1.83481573e-15] 19.99833113040441
+MDPVehicle #856: [4.08873182e+02 1.52592835e-09] 9.999997628609677
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2781907250008467
+---------------------------------------------------------------
+Step 181 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.28703683e+02 1.66933753e-15] 19.99882166667877
+MDPVehicle #856: [4.10873182e+02 9.72009216e-10] 9.999998325640155
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27819649752334613
+llm action: IDLE
+---------------------------------------------------------------
+Step 182 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.32703475e+02 1.50385574e-15] 19.999168018028733
+MDPVehicle #856: [4.12873181e+02 5.80833749e-10] 9.999998817790196
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.278200573309511
+---------------------------------------------------------------
+Step 183 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.36703328e+02 1.33837142e-15] 19.999412565198625
+MDPVehicle #856: [4.14873181e+02 3.18063026e-10] 9.999999165280974
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782034510865769
+llm action: IDLE
+---------------------------------------------------------------
+Step 184 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.40703225e+02 1.17288532e-15] 19.999585231822582
+MDPVehicle #856: [4.16873181e+02 1.50750283e-10] 9.999999410632656
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27820548298925935
+---------------------------------------------------------------
+Step 185 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.44703152e+02 1.00739796e-15] 19.99970714598353
+MDPVehicle #856: [4.18873181e+02 5.08247908e-11] 9.999999583867318
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782069176481701
+---------------------------------------------------------------
+Step 186 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.48703100e+02 8.41909716e-16] 19.999793225518175
+MDPVehicle #856: [ 4.20873181e+02 -3.85087602e-12] 9.999999706182551
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782079306131157
+---------------------------------------------------------------
+Step 187 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.52703064e+02 6.76420839e-16] 19.99985400341491
+MDPVehicle #856: [ 4.22873181e+02 -2.97268053e-11] 9.99999979254527
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782086458339765
+llm action: IDLE
+---------------------------------------------------------------
+Step 188 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.56703038e+02 5.10931519e-16] 19.999896916666554
+MDPVehicle #856: [ 4.24873181e+02 -3.84117927e-11] 9.999999853523114
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782091508276407
+---------------------------------------------------------------
+Step 189 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.60703020e+02 3.45441885e-16] 19.99992721628641
+MDPVehicle #856: [ 4.26873181e+02 -3.76981876e-11] 9.999999896577542
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782095073868729
+{MDPVehicle #864: [7.64703007e+02 1.79952031e-16]: {}, MDPVehicle #856: [ 4.28873181e+02 -3.25429968e-11]: {}, IDMVehicle #432: [677.52459591   0.        ]: {}, IDMVehicle #576: [ 7.92693827e+02 -6.56727841e-16]: {}, IDMVehicle #288: [ 3.69671017e+02 -1.58845054e-06]: {}}
+---------------------------------------------------------------
+Step 190 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.64703007e+02 1.79952031e-16] 19.99994860984034
+MDPVehicle #856: [ 4.28873181e+02 -3.25429968e-11] 9.999999926976841
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27820975914148893
+---------------------------------------------------------------
+Step 191 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [7.68702998e+02 1.44620202e-17] 19.999963715117303
+MDPVehicle #856: [ 4.30873181e+02 -2.59037708e-11] 9.999999948440776
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782099368970509
+llm action: IDLE
+---------------------------------------------------------------
+Step 192 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 7.72702991e+02 -1.51028101e-16] 19.99997438045102
+MDPVehicle #856: [ 4.32873181e+02 -1.93962451e-11] 9.999999963595746
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.2782100624043418
+llm action: IDLE
+---------------------------------------------------------------
+Step 193 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 7.76702987e+02 -3.16518299e-16] 19.999981910888476
+MDPVehicle #856: [ 4.34873181e+02 -1.37826433e-11] 9.999999974296166
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.27821015102086605
+---------------------------------------------------------------
+Step 194 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 7.80702984e+02 -4.82008553e-16] 19.999987227879927
+MDPVehicle #856: [ 4.36873181e+02 -9.31654013e-12] 9.999999981851378
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.24729972837440375
+---------------------------------------------------------------
+Step 195 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+llm action: IDLE
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 7.84702981e+02 -6.47498845e-16] 19.999990982030766
+MDPVehicle #856: [ 4.38873181e+02 -5.97381618e-12] 9.999999987185861
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.19463600929177752
+---------------------------------------------------------------
+Step 196 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 7.88702980e+02 -8.12989165e-16] 19.999993632711824
+MDPVehicle #856: [ 4.40873181e+02 -3.59951200e-12] 9.999999990952361
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.13980636787275327
+---------------------------------------------------------------
+Step 197 (Parallel Actor-Reasoner Control Loop)
+{MDPVehicle #864: [ 7.92702979e+02 -9.78479504e-16]: {}, MDPVehicle #856: [ 4.42873181e+02 -1.99511974e-12]: {}, IDMVehicle #432: [699.76626368   0.        ]: {}, IDMVehicle #576: [ 8.14336644e+02 -1.81487322e-16]: {}, IDMVehicle #288: [ 3.89903009e+02 -2.66479358e-07]: {}}
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 7.92702979e+02 -9.78479504e-16] 19.99999550426957
+MDPVehicle #856: [ 4.42873181e+02 -1.99511974e-12] 9.999999993611763
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.08262496799673702
+---------------------------------------------------------------
+Step 198 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 7.96702978e+02 -1.14396986e-15] 19.999996825714256
+MDPVehicle #856: [ 4.44873181e+02 -9.66738939e-13] 9.999999995489476
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.022880983678821243
+---------------------------------------------------------------
+Step 199 (Parallel Actor-Reasoner Control Loop)
+[Actor Fallback] CAV 1761432977904 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 0 using Reasoner action: IDLE (raw: [1])
+[Actor Fallback] CAV 1 using Reasoner action: IDLE (raw: [1])
+MDPVehicle #904: [91.24188607  0.        ] 16.692621833372034
+MDPVehicle #864: [ 8.00702977e+02 -1.30946022e-15] 19.999997758742403
+MDPVehicle #856: [ 4.46873181e+02 -3.47392054e-13] 9.999999996815271
+llm_actions: [1, 1, 1]
+global_reward_llm: 0.007517129264111892
+========== Reasoner Thread Stopped ==========
+Finished episode: 0
+llm action: IDLE
