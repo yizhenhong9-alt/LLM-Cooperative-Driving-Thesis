@@ -31,7 +31,10 @@ class HighwayEnv(AbstractEnv):
                 "features": ["presence", "x", "y", "vx", "vy", "cos_h", "sin_h"],
             },
             "action": {
-                "type": "DiscreteMetaAction",
+                "type": "MultiAgentAction",
+                "action_config": {
+                    "type": "DiscreteMetaAction",
+                },
             },
             "lanes_count": 4,
             "screen_width": 1200,

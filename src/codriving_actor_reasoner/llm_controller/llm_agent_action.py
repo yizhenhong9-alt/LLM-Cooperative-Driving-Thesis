@@ -7,8 +7,6 @@ import gym
 import re
 import os
 
-api_key = os.getenv("OPENAI_API_KEY", "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")
-
 class LlmAgent_action_module():
     def __init__(self, env):
         self.sce = Scenario(env.road, vehicleCount=10)
@@ -28,13 +26,13 @@ class LlmAgent_action_module():
         provider = os.getenv("LLM_PROVIDER", "openai").lower()
         if provider == "ollama":
             self.client = OpenAI(
-                api_key=os.getenv("LLM_API_KEY", "ollama"),
+                api_key=os.getenv("LLM_API_KEY"),
                 base_url=os.getenv("LLM_API_BASE", "http://127.0.0.1:11434/v1")
             )
             self.model_name = os.getenv("LLM_MODEL", "qwen2.5:7b")
         else:
             self.client = OpenAI(
-                api_key=os.getenv("LLM_API_KEY", api_key),
+                api_key=os.getenv("LLM_API_KEY"),
                 base_url=os.getenv("LLM_API_BASE", "https://api.openai.com/v1")
             )
             self.model_name = os.getenv("LLM_MODEL", "gpt-4o-mini")

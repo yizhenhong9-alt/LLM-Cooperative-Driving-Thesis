@@ -10,6 +10,7 @@ def patched_load_default_certs(self, purpose=ssl.Purpose.SERVER_AUTH):
 ssl.SSLContext.load_default_certs = patched_load_default_certs
 
 import time
+import argparse
 import imageio
 import openpyxl
 import gym
@@ -17,6 +18,7 @@ import numpy as np
 import re
 from llm_controller.memory import DrivingMemory
 from llm_controller.parallel_agent import ParallelAgentCoordination
+from experiment_scenarios import create_environment
 
 def open_excel(i, scenario_name):
     file_dir = f'./results/test/{scenario_name}/excel/'
@@ -59,15 +61,36 @@ def write_data(workbook, env, t):
     return workbook
 
 # Set up environment
-env = gym.make('highway-v0')
+parser = argparse.ArgumentParser(description="Run parallel-agent evaluation.")
+parser.add_argument(
+    "--scenario",
+    choices=["highway", "intersection", "merge"],
+    default="highway",
+    help="Traffic scenario to run (default: highway)."
+)
+parser.add_argument(
+    "--episodes",
+    type=int,
+    default=100,
+    help="Number of evaluation episodes to run (default: 100)."
+)
+args = parser.parse_args()
+
+env = create_environment(gym, args.scenario)
 scenario_name = env.spec.id
+
+print(f"Requested scenario: {args.scenario}")
+print(f"Actual environment: {env.spec.id}")
+print(f"Controlled vehicles: {len(env.controlled_vehicles)}")
+print(f"Environment action type: {type(env.action_type).__name__}")
+print(f"Episodes: {args.episodes}")
 
 # Configure API details
 os.environ["EMBEDDING_PROVIDER"] = "ollama"  # set to ollama or openai
 os.environ["LLM_PROVIDER"] = "ollama"
 
 # Test mode loops through 100 episodes
-episodes = 100
+episodes = args.episodes
 success_count = 0
 collisions = 0
 speeds = []
@@ -136,7 +159,7 @@ for i in range(episodes):
         t += 1
         
         # Check for collision
-        if info.get("crashed", False):
+        if info.get("cav_crashed", False):
             crashed = True
             print("💥 COLLISION occurred!")
             break

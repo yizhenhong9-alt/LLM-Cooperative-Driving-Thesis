@@ -10,6 +10,7 @@ def patched_load_default_certs(self, purpose=ssl.Purpose.SERVER_AUTH):
 ssl.SSLContext.load_default_certs = patched_load_default_certs
 
 import time
+import argparse
 import imageio
 import openpyxl
 import gym
@@ -18,6 +19,7 @@ import re
 from openai import OpenAI
 from llm_controller.memory import DrivingMemory
 from llm_controller.parallel_agent import ParallelAgentCoordination
+from experiment_scenarios import create_environment
 
 def open_excel(i, scenario_name):
     file_dir = f'./results/train/{scenario_name}/excel/'
@@ -60,20 +62,41 @@ def write_data(workbook, env, t):
     return workbook
 
 # Set up environment (enable merge or intersection or highway)
-env = gym.make('highway-v0')
+parser = argparse.ArgumentParser(description="Run parallel-agent training.")
+parser.add_argument(
+    "--scenario",
+    choices=["highway", "intersection", "merge"],
+    default="highway",
+    help="Traffic scenario to run (default: highway)."
+)
+parser.add_argument(
+    "--episodes",
+    type=int,
+    default=50,
+    help="Number of training episodes to run (default: 50)."
+)
+args = parser.parse_args()
+
+env = create_environment(gym, args.scenario)
 scenario_name = env.spec.id
+
+print(f"Requested scenario: {args.scenario}")
+print(f"Actual environment: {env.spec.id}")
+print(f"Controlled vehicles: {len(env.controlled_vehicles)}")
+print(f"Environment action type: {type(env.action_type).__name__}")
+print(f"Episodes: {args.episodes}")
 
 # Enable training mode (with online memory writing)
 os.environ["EMBEDDING_PROVIDER"] = "ollama"  # set to ollama or openai
 os.environ["LLM_PROVIDER"] = "ollama"
 
 client = OpenAI(
-    api_key=os.getenv("LLM_API_KEY", "ollama"),
+    api_key=os.getenv("LLM_API_KEY"),
     base_url=os.getenv("LLM_API_BASE", "http://127.0.0.1:11434/v1")
 )
 model_name = os.getenv("LLM_MODEL", "qwen2.5:7b")
 
-episodes = 50  # train mode runs 50 rounds for learning
+episodes = args.episodes  # train mode defaults to 50 rounds for learning
 
 print("==================== Starting Parallel Agent Training (Online Learning) ====================")
 
@@ -129,7 +152,7 @@ for i in range(episodes):
         t += 1
         
         # Check for collision
-        is_collision = info.get("crashed", False)
+        is_collision = info.get("cav_crashed", False)
         if is_collision:
             print("❌ COLLISION DETECTED! Triggering Self-Reflection Refinement Loop...")
             

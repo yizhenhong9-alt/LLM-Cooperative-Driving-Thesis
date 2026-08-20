@@ -7,9 +7,6 @@ import os
 import requests
 from langchain.embeddings.base import Embeddings
 
-api_key = os.getenv("OPENAI_API_KEY", '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')
-os.environ["OPENAI_API_KEY"] = api_key
-
 class OllamaLocalEmbeddings(Embeddings):
     def __init__(self, base_url: str, model: str):
         self.base_url = base_url.replace("/v1", "").rstrip("/")
